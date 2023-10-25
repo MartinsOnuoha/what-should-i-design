@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&display=swap');
+@import './scrollbar.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
-
+:root {
+  --color-dark: #2E2E41;
+  --color-dark-light: #272C3A;
+  --color-dark-text: #242424;
+  --color-ghostwhite: ghostwhite;
 }
 
 body {
   font-family: 'Ibarra Real Nova', serif;
-  color: #242424;
+  color: var(--color-dark-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--color-ghostwhite);
+  }
 }
 

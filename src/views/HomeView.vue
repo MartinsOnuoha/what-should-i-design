@@ -23,13 +23,20 @@ const { statements } = useDBStore()
 <style lang="scss">
 .HomeView {
   @apply flex h-screen;
-  background-color: ghostwhite;
+  background-color: var(--color-ghostwhite);
+
   main {
-    @apply w-2/4 p-5 max-h-screen overflow-scroll;
+    @apply w-2/4 p-5 max-h-screen overflow-y-scroll;
   }
   &__content {
     @apply grid grid-cols-2 gap-4;
   }
 
+}
+
+@media (prefers-color-scheme: dark) {
+  .HomeView {
+    background-color: var(--color-dark);
+  }
 }
 </style>

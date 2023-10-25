@@ -28,4 +28,10 @@ const categoryColorGroups = [
   padding: 0.34rem 0.7rem;
   font-size: 0.75rem;
 }
+
+@media (prefers-color-scheme: dark) {
+  .AppCategory {
+    @apply bg-transparent;
+  }
+}
 </style>
