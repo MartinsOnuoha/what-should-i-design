@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import AppSidePanel from '@/components/AppSideBanner/AppSideBanner.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <section class="flex">
+    <AppSidePanel />
+    <main class="flex">
+      HEllo
+    </main>
+  </section>
 </template>
