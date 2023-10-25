@@ -1,6 +1,6 @@
 <template>
-  <aside class="bg-green-200">
-    <img width="200" src="@/assets/banner.png" :alt="alt">
+  <aside class="AppSideBanner">
+    <div class="AppSideBanner__overlay"></div>
   </aside>
 </template>
 
@@ -12,3 +12,15 @@
   }
  })
 </script>
+
+<style lang="scss" scoped>
+.AppSideBanner {
+  @apply h-screen bg-contain relative;
+  background-image: url("@/assets/banner.webp");
+
+  &__overlay {
+    @apply h-screen absolute w-full bg-gradient-to-t opacity-60;
+    @apply from-yellow-500 via-purple-900 to-transparent;
+  }
+}
+</style>

@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+body {
+  font-family: 'Ibarra Real Nova', serif;
+  color: #242424;
+}
+
