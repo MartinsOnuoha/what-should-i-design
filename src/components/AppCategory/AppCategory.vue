@@ -3,7 +3,7 @@ import type { PropType } from "vue";
 import type { Category } from "@/stores/db";
 
 defineProps({
-  category: { type: Object as PropType<Category> }
+  category: { type: Object as PropType<Category>, required: true }
 })
 
 const categoryColorGroups = [
