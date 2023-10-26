@@ -6,12 +6,25 @@ name: Deploy to Firebase Hosting on merge
   push:
     branches:
       - master
-env: ${{ vars }}
 
 jobs:
   build_and_deploy:
+    environment: 'production'
+    env:
+      VITE_APP_TITLE: ${{ vars.VITE_APP_TITLE }}
+      VITE_APP_DESCRIPTION: ${{ vars.VITE_APP_DESCRIPTION }}
+      VITE_APP_WEBSITE: ${{ vars.VITE_APP_WEBSITE }}
+      VITE_APP_IMG: ${{ vars.VITE_APP_IMG }}
+      VITE_APP_KEYWORDS: ${{ vars.VITE_APP_KEYWORDS }}
+      VITE_APP_LANG: ${{ vars.VITE_APP_LANG }}
     runs-on: ubuntu-latest
     steps:
+      - name: Check variables
+        run: |
+          echo "repository variable : $VITE_APP_TITLE"
+          echo "organization variable : $ORGANIZATION_VAR"
+          echo "overridden variable : $OVERRIDE_VAR"
+          echo "variable from shell environment : $env_var"
       - uses: actions/checkout@v2
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
