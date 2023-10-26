@@ -1,6 +1,12 @@
 {
   "name": "what-should-i-design",
   "version": "0.0.0",
+  "license": "(MIT OR Apache-2.0)",
+  "author": {
+    "email": "martinsvictor.nd@gmail.com",
+    "name": "MartinsOnuoha",
+    "url": "https://github.com/MartinsOnuoha"
+  },
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -14,6 +20,7 @@
     "commit": "cz"
   },
   "dependencies": {
+    "click-outside-vue3": "^4.0.1",
     "pinia": "^2.1.7",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"

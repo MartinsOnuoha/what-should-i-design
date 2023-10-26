@@ -12,7 +12,7 @@ const getCategories = useDBStore().categories.filter(category => props.statement
 </script>
 
 <template>
-  <div class="AppStatementCardContainer">
+  <div class="AppStatementCardContainer" tabindex="0">
     <div class="AppStatementCard">
       <div class="AppStatementCard__content">
         {{ statement.description }}
@@ -25,6 +25,11 @@ const getCategories = useDBStore().categories.filter(category => props.statement
 </template>
 
 <style lang="scss">
+.AppStatementCardContainer {
+  &:focus {
+    @apply outline-amber-500;
+  }
+}
 .AppStatementCard {
   @apply bg-white h-52 w-full cursor-pointer p-5 rounded-lg border relative;
 
