@@ -2,6 +2,7 @@
   "name": "what-should-i-design",
   "version": "0.0.0",
   "license": "(MIT OR Apache-2.0)",
+  "keywords": ["ui/ux", "problem-statment", "what-should-i-design", "design"],
   "author": {
     "email": "martinsvictor.nd@gmail.com",
     "name": "MartinsOnuoha",
@@ -51,6 +52,10 @@
     "vite": "^4.4.11",
     "vitest": "^0.34.6",
     "vue-tsc": "^1.8.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MartinsOnuoha/what-should-i-design"
   },
   "config": {
     "commitizen": {
