@@ -18,8 +18,8 @@ const selectCategory = (category: Category) => {
 <template>
   <div @click="toggleDropdown" @blur="closeDropdown" class="AppFilter" tabindex="0">
     <label for="filter-dropdown"> Filter by Categories</label>
-    <ul v-show="dropdown" class="AppFilter__dropdown" name="filter-dropdown">
-      <li v-for="(category, index) in categories" :key="index" @click="selectCategory(category)">
+    <ul v-show="dropdown" class="AppFilter__dropdown" name="filter-dropdown" role="listbox" :aria-expanded="dropdown">
+      <li v-for="(category, index) in categories" :key="index" @click="selectCategory(category)" role="option" tabindex="0">
         <span>{{ category.emoji }}</span>
         {{ category.name }}
       </li>
