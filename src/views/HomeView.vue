@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import AppSidePanel from '@/components/AppSideBanner/AppSideBanner.vue'
 import AppStatementCard from "@/components/AppStatementCard/AppStatementCard.vue";
+import AppFilter from '@/components/AppFilter/AppFilter.vue'
 import { useDBStore } from "@/stores/db";
 
 const { statements } = useDBStore()
@@ -11,7 +12,7 @@ const { statements } = useDBStore()
     <AppSidePanel class="w-2/4" />
     <main>
       <header class="HomeView__header">
-
+        <AppFilter />
       </header>
       <section class="HomeView__content">
         <AppStatementCard v-for="(statement, index) in statements" :key="index" :statement="statement" />
@@ -28,6 +29,11 @@ const { statements } = useDBStore()
   main {
     @apply w-2/4 p-5 max-h-screen overflow-y-scroll;
   }
+
+  &__header {
+    @apply pt-4 pb-4
+  }
+
   &__content {
     @apply grid grid-cols-2 gap-4;
   }
