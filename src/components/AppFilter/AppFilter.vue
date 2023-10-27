@@ -8,8 +8,9 @@ const { categories } = useDBStore()
 
 const dropdown = ref(false)
 const categorySearch = ref(null)
+const filterValue = ref('')
+const categoriesList = ref(categories)
 const selectedValue: Ref<Category | null> = ref(null)
-
 const toggleDropdown = () => {
   dropdown.value = !dropdown.value
 
@@ -22,6 +23,15 @@ const openDropdown = () => (dropdown.value = true)
 const selectCategory = (category: Category) => {
   selectedValue.value = category
   closeDropdown()
+}
+const filterCategories = () => {
+  if (filterValue.value) {
+    categoriesList.value = categoriesList.value.filter((category) =>
+      category.name.toLowerCase().includes(filterValue.value.toLowerCase())
+    )
+    return
+  }
+  categoriesList.value = categories
 }
 </script>
 
@@ -36,7 +46,9 @@ const selectCategory = (category: Category) => {
         name="category-dropdown"
         placeholder="Filter by Categories"
         aria-haspopup="true"
+        @input="filterCategories"
         @focusin="openDropdown"
+        v-model="filterValue"
       />
       <button
         @click="toggleDropdown"
@@ -58,7 +70,7 @@ const selectCategory = (category: Category) => {
       aria-labelledby="category-dropdown-btn"
     >
       <li
-        v-for="(category, index) in categories"
+        v-for="(category, index) in categoriesList"
         :key="index"
         @click="selectCategory(category)"
         role="option"

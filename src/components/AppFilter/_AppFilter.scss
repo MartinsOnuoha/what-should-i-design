@@ -14,7 +14,7 @@
   }
 
   &__dropdown {
-    @apply absolute top-10 z-10 bg-white border p-3 left-0 max-h-80 shadow-2xl rounded-lg overflow-y-scroll;
+    @apply absolute top-10 z-10 bg-white border p-3 left-0 max-h-80 shadow-2xl rounded-lg overflow-y-scroll w-full;
     li {
       @apply p-2 transition-all flex;
       &:hover {
