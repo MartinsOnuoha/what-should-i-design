@@ -25,31 +25,8 @@ const getCategories = useDBStore().categories.filter(category => props.statement
 </template>
 
 <style lang="scss">
-.AppStatementCardContainer {
-  &:focus {
-    @apply outline-amber-500;
-  }
-}
-.AppStatementCard {
-  @apply bg-white h-52 w-full cursor-pointer p-5 rounded-lg border relative;
-
-  &__content {
-    @apply text-lg;
-  }
-
-  &__categories {
-    @apply absolute bottom-2 left-0 w-full p-5;
-  }
-}
-
+@import "AppStatementCard";
 @media (prefers-color-scheme: dark) {
-  .AppStatementCardContainer {
-    @apply rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1;
-  }
-  .AppStatementCard {
-    @apply shadow-2xl border-none;
-    background-color: var(--color-dark);
-    color: var(--color-ghostwhite);
-  }
+  @import 'AppStatementCard.dark';
 }
 </style>

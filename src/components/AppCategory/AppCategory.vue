@@ -30,8 +30,6 @@ const categoryColorGroups = [
 }
 
 @media (prefers-color-scheme: dark) {
-  .AppCategory {
-    @apply bg-transparent;
-  }
+  @import '_AppCategory.dark';
 }
 </style>

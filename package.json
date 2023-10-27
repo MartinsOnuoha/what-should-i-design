@@ -2,7 +2,12 @@
   "name": "what-should-i-design",
   "version": "0.0.0",
   "license": "(MIT OR Apache-2.0)",
-  "keywords": ["ui/ux", "problem-statment", "what-should-i-design", "design"],
+  "keywords": [
+    "ui/ux",
+    "problem-statment",
+    "what-should-i-design",
+    "design"
+  ],
   "author": {
     "email": "martinsvictor.nd@gmail.com",
     "name": "MartinsOnuoha",
@@ -21,6 +26,7 @@
     "commit": "cz"
   },
   "dependencies": {
+    "@vueuse/core": "^10.5.0",
     "click-outside-vue3": "^4.0.1",
     "pinia": "^2.1.7",
     "vue": "^3.3.4",

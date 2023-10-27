@@ -1,0 +1,5 @@
+body[color-scheme="dark"] {
+  @import "@/views/HomeView.dark";
+  @import '@/components/AppCategory/_AppCategory.dark';
+  @import '@/components/AppStatementCard/_AppStatementCard.dark';
+}

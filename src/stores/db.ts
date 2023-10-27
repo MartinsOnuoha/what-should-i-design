@@ -13,7 +13,7 @@ export type Category = {
   name: string;
   emoji: string;
 }
-export const useDBStore = defineStore('counter', {
+export const useDBStore = defineStore('db', {
   state: () => {
     return {
       categories: categories.data,

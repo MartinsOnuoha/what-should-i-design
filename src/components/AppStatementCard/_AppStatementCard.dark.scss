@@ -1,0 +1,8 @@
+.AppStatementCardContainer {
+  @apply rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1;
+}
+.AppStatementCard {
+  @apply shadow-2xl border-none;
+  background-color: var(--color-dark);
+  color: var(--color-ghostwhite);
+}

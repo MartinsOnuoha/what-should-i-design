@@ -3,6 +3,7 @@ import AppSidePanel from '@/components/AppSideBanner/AppSideBanner.vue'
 import AppStatementCard from "@/components/AppStatementCard/AppStatementCard.vue";
 import AppFilter from '@/components/AppFilter/AppFilter.vue'
 import { useDBStore } from "@/stores/db";
+import HeaderActions from "@/components/AppHeader/HeaderActions.vue";
 
 const { statements } = useDBStore()
 </script>
@@ -13,6 +14,7 @@ const { statements } = useDBStore()
     <main>
       <header class="HomeView__header">
         <AppFilter />
+        <HeaderActions />
       </header>
       <section class="HomeView__content">
         <AppStatementCard v-for="(statement, index) in statements" :key="index" :statement="statement" />
@@ -31,7 +33,7 @@ const { statements } = useDBStore()
   }
 
   &__header {
-    @apply pt-4 pb-4
+    @apply pt-4 pb-4 flex items-center justify-between;
   }
 
   &__content {
@@ -41,8 +43,6 @@ const { statements } = useDBStore()
 }
 
 @media (prefers-color-scheme: dark) {
-  .HomeView {
-    background-color: var(--color-dark);
-  }
+  @import "HomeView.dark";
 }
 </style>

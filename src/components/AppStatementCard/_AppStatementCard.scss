@@ -1,0 +1,17 @@
+.AppStatementCardContainer {
+  @apply rounded-lg p-1;
+  &:focus {
+    @apply outline-amber-500;
+  }
+  .AppStatementCard {
+    @apply bg-white h-52 w-full cursor-pointer p-5 rounded-lg border relative hover:bg-amber-50 transition-all;
+
+    &__content {
+      @apply text-lg;
+    }
+
+    &__categories {
+      @apply absolute bottom-2 left-0 w-full p-5;
+    }
+  }
+}
