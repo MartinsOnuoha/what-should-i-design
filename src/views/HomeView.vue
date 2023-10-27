@@ -4,8 +4,10 @@ import AppStatementCard from '@/components/AppStatementCard/AppStatementCard.vue
 import AppFilter from '@/components/AppFilter/AppFilter.vue'
 import { useDBStore } from '@/stores/db'
 import HeaderActions from '@/components/AppHeader/HeaderActions.vue'
+import { ref } from 'vue'
 
 const { statements } = useDBStore()
+const statementsList = ref(statements)
 </script>
 
 <template>
@@ -18,7 +20,7 @@ const { statements } = useDBStore()
       </header>
       <section class="HomeView__content">
         <AppStatementCard
-          v-for="(statement, index) in statements"
+          v-for="(statement, index) in statementsList"
           :key="index"
           :statement="statement"
         />

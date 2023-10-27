@@ -17,13 +17,8 @@ const categoryColorGroups = [['bg-amber-50', 'text-amber-500', 'border-amber-500
 </template>
 
 <style lang="scss">
-.AppCategory {
-  @apply text-center font-semibold rounded-full border font-sans;
-  padding: 0.34rem 0.7rem;
-  font-size: 0.75rem;
-}
-
+@import 'AppCategory';
 @media (prefers-color-scheme: dark) {
-  @import '_AppCategory.dark';
+  @import 'AppCategory.dark';
 }
 </style>

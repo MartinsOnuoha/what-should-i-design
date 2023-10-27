@@ -28,6 +28,7 @@ const getCategories = useDBStore().categories.filter(
 
 <style lang="scss">
 @import 'AppStatementCard';
+
 @media (prefers-color-scheme: dark) {
   @import 'AppStatementCard.dark';
 }
