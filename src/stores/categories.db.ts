@@ -35,7 +35,7 @@ export default {
     { id: 33, name: 'Art and Creativity', emoji: '🎨' },
     { id: 34, name: 'Science and Research', emoji: '🔬' },
     { id: 35, name: 'Space Exploration', emoji: '🚀' },
-    { id: 36, name: 'Children\'s Apps', emoji: '👶' },
+    { id: 36, name: "Children's Apps", emoji: '👶' },
     { id: 37, name: 'Accessibility Solutions', emoji: '♿' },
     { id: 38, name: 'Smart Cities', emoji: '🌆' },
     { id: 39, name: 'Pet Care and Veterinary', emoji: '🐾' },
@@ -52,7 +52,6 @@ export default {
     { id: 50, name: 'Blockchain and NFT Marketplaces', emoji: '💱' },
     { id: 51, name: 'Space Tourism', emoji: '🚀' },
     { id: 52, name: 'Agricultural Technology (AgTech)', emoji: '🌾' },
-    { id: 53, name: 'Blockchain and Cryptocurrency Gaming', emoji: '🎮' },
+    { id: 53, name: 'Blockchain and Cryptocurrency Gaming', emoji: '🎮' }
   ]
 }
-

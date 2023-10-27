@@ -5,18 +5,18 @@
 </template>
 
 <script setup lang="ts">
- defineProps({
+defineProps({
   alt: {
     type: String,
     default: 'Banner image'
   }
- })
+})
 </script>
 
 <style lang="scss" scoped>
 .AppSideBanner {
   @apply h-screen bg-contain relative;
-  background-image: url("@/assets/banner.webp");
+  background-image: url('@/assets/banner.webp');
 
   &__overlay {
     @apply h-screen absolute w-full opacity-60;

@@ -2,7 +2,5 @@
   @apply rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1;
 }
 .AppStatementCard {
-  @apply shadow-2xl border-none;
-  background-color: var(--color-dark);
-  color: var(--color-ghostwhite);
+  @apply shadow-2xl border-none bg-[var(--color-dark)] text-[var(--color-ghostwhite)] hover:bg-gradient-to-tr from-pink-900 via-[var(--color-dark)] to-[var(--color-dark)];
 }

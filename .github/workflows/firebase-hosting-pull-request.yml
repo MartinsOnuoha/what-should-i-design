@@ -7,6 +7,14 @@ jobs:
   build_and_preview:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
+    environment: 'development'
+    env:
+      VITE_APP_TITLE: ${{ vars.VITE_APP_TITLE }}
+      VITE_APP_DESCRIPTION: ${{ vars.VITE_APP_DESCRIPTION }}
+      VITE_APP_WEBSITE: ${{ vars.VITE_APP_WEBSITE }}
+      VITE_APP_IMG: ${{ vars.VITE_APP_IMG }}
+      VITE_APP_KEYWORDS: ${{ vars.VITE_APP_KEYWORDS }}
+      VITE_APP_LANG: ${{ vars.VITE_APP_LANG }}
     steps:
       - uses: actions/checkout@v2
       - run: npm ci && npm run build
