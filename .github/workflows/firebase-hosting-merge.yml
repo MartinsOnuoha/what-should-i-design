@@ -21,10 +21,12 @@ jobs:
     steps:
       - name: Check variables
         run: |
-          echo "repository variable : $VITE_APP_TITLE"
-          echo "organization variable : $ORGANIZATION_VAR"
-          echo "overridden variable : $OVERRIDE_VAR"
-          echo "variable from shell environment : $env_var"
+          echo "VITE_APP_TITLE: $VITE_APP_TITLE"
+          echo "VITE_APP_DESCRIPTION: $VITE_APP_DESCRIPTION"
+          echo "VITE_APP_WEBSITE: $VITE_APP_WEBSITE"
+          echo "VITE_APP_IMG: $VITE_APP_IMG"
+          echo "VITE_APP_KEYWORDS: $VITE_APP_KEYWORDS"
+          echo "VITE_APP_LANG: $VITE_APP_LANG"
       - uses: actions/checkout@v2
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
