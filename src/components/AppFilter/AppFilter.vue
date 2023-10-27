@@ -25,13 +25,14 @@ const selectCategory = (category: Category) => {
   closeDropdown()
 }
 const filterCategories = () => {
+  categoriesList.value = categories
+
   if (filterValue.value) {
     categoriesList.value = categoriesList.value.filter((category) =>
       category.name.toLowerCase().includes(filterValue.value.toLowerCase())
     )
     return
   }
-  categoriesList.value = categories
 }
 </script>
 
