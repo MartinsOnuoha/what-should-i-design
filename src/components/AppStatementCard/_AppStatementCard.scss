@@ -4,8 +4,7 @@
     @apply outline-amber-500;
   }
   .AppStatementCard {
-    @apply bg-white h-52 w-full cursor-pointer p-5 rounded-lg border relative hover:bg-amber-50 transition-all;
-
+    @apply bg-white h-52 w-full cursor-pointer p-5 rounded-lg border relative hover:bg-gradient-to-tr from-amber-100 via-transparent to-transparent;
     &__content {
       @apply text-lg;
     }

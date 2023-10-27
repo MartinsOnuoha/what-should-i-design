@@ -1,20 +1,25 @@
 <script setup lang="ts">
 import { useDark, useToggle } from '@vueuse/core'
-import MdiWhiteBalanceSunny from "@/components/Icons/MdiWhiteBalanceSunny.vue";
-import MdiMoonWaningCrescent from "@/components/Icons/MdiMoonWaningCrescent.vue";
+import MdiWhiteBalanceSunny from '@/components/Icons/MdiWhiteBalanceSunny.vue'
+import MdiMoonWaningCrescent from '@/components/Icons/MdiMoonWaningCrescent.vue'
 
 const isDark = useDark({
   selector: 'body',
   attribute: 'color-scheme',
   valueDark: 'dark',
-  valueLight: 'light',
+  valueLight: 'light'
 })
 
 const toggleDark = useToggle(isDark)
 </script>
 
 <template>
-  <button @click="toggleDark()" aria-label="toggle dark-mode" title="toggle dark-mode"  class="ToggleDarkMode">
+  <button
+    @click="toggleDark()"
+    aria-label="toggle dark-mode"
+    title="toggle dark-mode"
+    class="ToggleDarkMode"
+  >
     <MdiWhiteBalanceSunny v-show="isDark" />
     <MdiMoonWaningCrescent v-show="!isDark" />
   </button>

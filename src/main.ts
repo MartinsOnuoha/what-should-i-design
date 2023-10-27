@@ -1,7 +1,6 @@
-
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import vClickOutside from "click-outside-vue3"
+import vClickOutside from 'click-outside-vue3'
 import App from './App.vue'
 import router from './router'
 import './assets/styles/main.scss'

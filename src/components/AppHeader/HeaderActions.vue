@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import MdiGithub from "@/components/Icons/MdiGithub.vue";
-import ToggleDarkMode from "@/components/AppHeader/ToggleDarkMode.vue";
+import MdiGithub from '@/components/Icons/MdiGithub.vue'
+import ToggleDarkMode from '@/components/AppHeader/ToggleDarkMode.vue'
 
 const GITHUB_URL = 'https://github.com/MartinsOnuoha/what-should-i-design'
 </script>
@@ -8,7 +8,13 @@ const GITHUB_URL = 'https://github.com/MartinsOnuoha/what-should-i-design'
 <template>
   <div class="HeaderActions">
     <ToggleDarkMode />
-    <a :href="GITHUB_URL" target="_blank" aria-label="github" title="Contribute on Github" class="HeaderActions__github">
+    <a
+      :href="GITHUB_URL"
+      target="_blank"
+      aria-label="github"
+      title="Contribute on Github"
+      class="HeaderActions__github"
+    >
       <MdiGithub />
     </a>
   </div>

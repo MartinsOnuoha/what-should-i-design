@@ -1,14 +1,16 @@
 <script setup lang="ts">
-import type {PropType} from "vue";
-import type { Statement } from "@/stores/db";
-import {useDBStore} from "@/stores/db";
-import AppCategory from "@/components/AppCategory/AppCategory.vue";
+import type { PropType } from 'vue'
+import type { Statement } from '@/stores/db'
+import { useDBStore } from '@/stores/db'
+import AppCategory from '@/components/AppCategory/AppCategory.vue'
 
 const props = defineProps({
-  statement: {type: Object as PropType<Statement>, required: true},
-});
+  statement: { type: Object as PropType<Statement>, required: true }
+})
 
-const getCategories = useDBStore().categories.filter(category => props.statement?.categories.includes(category.id))
+const getCategories = useDBStore().categories.filter(
+  (category) => props.statement?.categories.includes(category.id)
+)
 </script>
 
 <template>
@@ -18,14 +20,14 @@ const getCategories = useDBStore().categories.filter(category => props.statement
         {{ statement.description }}
       </div>
       <div class="AppStatementCard__categories">
-        <AppCategory v-for="(category, index) in getCategories" :key="index" :category="category"/>
+        <AppCategory v-for="(category, index) in getCategories" :key="index" :category="category" />
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss">
-@import "AppStatementCard";
+@import 'AppStatementCard';
 @media (prefers-color-scheme: dark) {
   @import 'AppStatementCard.dark';
 }
