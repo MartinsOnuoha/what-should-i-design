@@ -46,8 +46,8 @@ const selectCategory = (category: Category) => {
         data-toggle="dropdown"
         aria-haspopup="true"
       >
-        <MdiFilterRemoveOutline v-if="dropdown" />
-        <MdiFilterMenu v-else />
+        <MdiFilterRemoveOutline title="close filter" aria-label="close filter" v-if="dropdown" />
+        <MdiFilterMenu title="open filter" aria-label="open filter" v-else />
       </button>
     </label>
     <ul
