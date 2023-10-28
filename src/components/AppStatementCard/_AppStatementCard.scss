@@ -7,7 +7,7 @@
     @apply bg-white h-52 w-full shadow-none cursor-pointer p-5 rounded-lg  relative hover:bg-gradient-to-tr from-amber-100 via-transparent to-transparent text-[var(--color-dark-text)];
     border: 1px solid var(--color-border-gray);
     &__content {
-      @apply text-lg;
+      @apply text-lg max-h-32;
     }
 
     &__categories {

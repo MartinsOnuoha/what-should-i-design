@@ -3,6 +3,7 @@ import type { PropType } from 'vue'
 import type { Statement } from '@/stores/db'
 import { useDBStore } from '@/stores/db'
 import AppCategory from '@/components/AppCategory/AppCategory.vue'
+import { truncate } from '../../utils/util'
 
 const props = defineProps({
   statement: { type: Object as PropType<Statement>, required: true }
@@ -17,7 +18,7 @@ const getCategories = useDBStore().categories.filter(
   <div class="AppStatementCardContainer" tabindex="0">
     <div class="AppStatementCard">
       <div class="AppStatementCard__content">
-        {{ statement.description }}
+        {{ truncate(statement.description) }}
       </div>
       <div class="AppStatementCard__categories">
         <AppCategory v-for="(category, index) in getCategories" :key="index" :category="category" />
