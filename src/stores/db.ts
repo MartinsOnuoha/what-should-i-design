@@ -18,8 +18,12 @@ export const useDBStore = defineStore('db', {
   state: () => {
     return {
       categories: categories.data,
-      statements: shuffle(statements.data)
+      statements: statements.data
     }
   },
-  getters: {}
+  getters: {
+    formattedStatements: (state) => {
+      return [...new Set(shuffle(state.statements))]
+    }
+  }
 })

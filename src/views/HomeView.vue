@@ -6,8 +6,8 @@ import { useDBStore } from '@/stores/db'
 import HeaderActions from '@/components/AppHeader/HeaderActions.vue'
 import { ref } from 'vue'
 
-const { statements } = useDBStore()
-const statementsList = ref(statements)
+const { formattedStatements } = useDBStore()
+const statementsList = ref(formattedStatements)
 </script>
 
 <template>
