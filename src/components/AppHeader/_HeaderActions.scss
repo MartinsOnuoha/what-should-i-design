@@ -1,0 +1,7 @@
+.HeaderActions {
+  @apply flex text-2xl text-gray-600;
+
+  &__github {
+    @apply ml-3 border-l-gray-300 border-l pl-3 text-[var(--color-dark-icon)];
+  }
+}

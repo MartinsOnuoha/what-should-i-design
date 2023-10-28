@@ -1,2 +1,17 @@
 .AppFilter {
+  input {
+    @apply bg-transparent;
+  }
+  &__icon {
+    @apply text-[var(--color-ghostwhite)];
+  }
+
+  &__dropdown {
+    @apply bg-[var(--color-dark)] text-[var(--color-ghostwhite)];
+    li {
+      &:hover {
+        @apply text-gray-800;
+      }
+    }
+  }
 }

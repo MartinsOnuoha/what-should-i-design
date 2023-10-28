@@ -1,0 +1,9 @@
+.AppSideBanner {
+  @apply h-screen bg-contain relative;
+  background-image: url('@/assets/banner.webp');
+
+  &__overlay {
+    @apply h-screen absolute w-full opacity-60;
+    @apply bg-gradient-to-t from-yellow-500 via-purple-900 to-transparent;
+  }
+}

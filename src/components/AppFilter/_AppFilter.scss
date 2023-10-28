@@ -3,7 +3,7 @@
   @apply rounded-lg w-2/5 cursor-pointer relative bg-transparent border text-sm;
 
   input {
-    @apply w-full h-full p-3 rounded-lg relative;
+    @apply w-full h-full p-3 rounded-lg relative bg-white;
     &:focus {
       @apply outline-amber-500;
     }
@@ -14,7 +14,7 @@
   }
 
   &__dropdown {
-    @apply absolute top-10 z-10 bg-white border p-3 left-0 max-h-80 shadow-2xl rounded-lg overflow-y-scroll w-full;
+    @apply absolute top-10 z-10 bg-white border p-3 left-0 max-h-80 shadow-2xl rounded-lg overflow-y-scroll w-full text-[var(--color-dark-text)];
     li {
       @apply p-2 transition-all flex;
       &:hover {

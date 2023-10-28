@@ -1,10 +1,11 @@
 .AppStatementCardContainer {
-  @apply rounded-lg p-1;
+  @apply rounded-lg p-1 bg-none;
   &:focus {
     @apply outline-amber-500;
   }
   .AppStatementCard {
-    @apply bg-white h-52 w-full cursor-pointer p-5 rounded-lg border relative hover:bg-gradient-to-tr from-amber-100 via-transparent to-transparent;
+    @apply bg-white h-52 w-full shadow-none cursor-pointer p-5 rounded-lg  relative hover:bg-gradient-to-tr from-amber-100 via-transparent to-transparent text-[var(--color-dark-text)];
+    border: 1px solid var(--color-border-gray);
     &__content {
       @apply text-lg;
     }
