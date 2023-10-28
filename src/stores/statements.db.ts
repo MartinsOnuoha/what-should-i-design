@@ -239,6 +239,306 @@ export default {
       description:
         'Design an educational platform for farm safety training, offering interactive lessons and resources to promote safe agricultural practices.',
       categories: [18]
+    },
+    {
+      title: "Farmers' Marketplace App",
+      description:
+        'Create a mobile app that allows local farmers to sell their produce directly to consumers. Design a user-friendly interface for product listings, order management, and delivery options.',
+      categories: [18]
+    },
+    {
+      title: 'Soil Health Monitoring Dashboard',
+      description:
+        'Design a dashboard for farmers to monitor soil health, including pH levels, nutrient content, and moisture, using soil sensors. Provide data visualization and actionable insights.',
+      categories: [18]
+    },
+    {
+      title: 'Agricultural Knowledge Sharing Platform',
+      description:
+        'Develop a platform where farmers can share their knowledge and experiences. Create an easy-to-use interface for posting articles, asking questions, and sharing tips on best farming practices.',
+      categories: [18]
+    },
+    {
+      title: 'Greenhouse Management System',
+      description:
+        'Design a digital system for greenhouse farming. Provide controls for temperature, humidity, and lighting. Ensure an intuitive user interface for greenhouse management.',
+      categories: [18]
+    },
+    {
+      title: 'Sustainable Fashion Marketplace',
+      description:
+        'Create a sustainable fashion e-commerce platform that connects environmentally conscious shoppers with eco-friendly clothing brands. Design a user-friendly shopping experience with a focus on sustainability.',
+      categories: [1]
+    },
+    {
+      title: 'Grocery Delivery App',
+      description:
+        'Design a mobile app for a grocery delivery service. Ensure a seamless user experience for browsing products, adding items to the cart, scheduling deliveries, and tracking orders.',
+      categories: [1]
+    },
+    {
+      title: 'Patient Health Records Portal',
+      description:
+        'Create a patient-centric portal for accessing and managing personal health records. Design a secure, user-friendly platform for viewing medical history, test results, and appointments.',
+      categories: [2]
+    },
+    {
+      title: 'Mental Health & Wellness App',
+      description:
+        'Develop a mental health and wellness app that offers guided meditation, mood tracking, and self-help resources. Prioritize a calming and supportive user interface.',
+      categories: [2]
+    },
+    {
+      title: 'E-commerce Marketplace for Handmade Crafts',
+      description:
+        'Design an e-commerce platform exclusively for handmade craft products. Focus on creating a visually appealing and user-friendly marketplace for artisans and craft enthusiasts.',
+      categories: [1]
+    },
+    {
+      title: 'Healthcare Appointment Scheduling App',
+      description:
+        'Create a mobile app for scheduling healthcare appointments. Ensure a smooth booking process, reminders, and easy access to medical information.',
+      categories: [2]
+    },
+    {
+      title: 'Education Platform for Remote Learning',
+      description:
+        'Design an online education platform for remote learning. Provide interactive content, user-friendly navigation, and tools for both students and teachers.',
+      categories: [3]
+    },
+    {
+      title: 'Financial Budgeting and Planning App',
+      description:
+        'Develop a budgeting and financial planning app. Design an interface that helps users manage their finances, set goals, and track expenses effortlessly.',
+      categories: [4]
+    },
+    {
+      title: 'Social Media Community for Book Lovers',
+      description:
+        'Create a social media platform dedicated to book lovers. Design a user-friendly space for sharing book recommendations, reviews, and discussions.',
+      categories: [5]
+    },
+    {
+      title: 'Travel Planning and Booking App',
+      description:
+        'Design a mobile app for travel enthusiasts to plan and book trips. Prioritize a seamless booking process, itinerary management, and recommendations.',
+      categories: [6]
+    },
+    {
+      title: 'Entertainment Streaming Service',
+      description:
+        'Create a streaming service platform for movies and TV shows. Design an engaging and user-friendly interface for content discovery and viewing.',
+      categories: [7]
+    },
+    {
+      title: 'News Aggregation and Personalization App',
+      description:
+        'Develop a news app that aggregates and personalizes news content. Design an interface that tailors news to individual preferences.',
+      categories: [8]
+    },
+    {
+      title: 'Real Estate Property Listing Website',
+      description:
+        'Design a website for listing and searching real estate properties. Ensure an easy-to-navigate platform for property buyers and sellers.',
+      categories: [9]
+    },
+    {
+      title: 'Food Delivery Service App',
+      description:
+        'Create a food delivery app with a focus on user-friendly order placement, restaurant discovery, and real-time order tracking.',
+      categories: [10]
+    },
+    {
+      title: 'Ride-Sharing App',
+      description:
+        'Design a ride-sharing app for convenient transportation. Prioritize a simple booking process, route optimization, and user safety features.',
+      categories: [11]
+    },
+    {
+      title: 'Fitness and Wellness Tracking App',
+      description:
+        'Develop a fitness and wellness app for tracking workouts, nutrition, and health metrics. Design a motivating and intuitive user interface.',
+      categories: [12]
+    },
+    {
+      title: 'Government Service Information Portal',
+      description:
+        'Create an information portal for government services and resources. Ensure easy access to government information and online services.',
+      categories: [13]
+    },
+    {
+      title: 'Nonprofit Donation Platform',
+      description:
+        'Design a platform for nonprofit organizations to receive donations and support their causes. Prioritize a user-friendly and secure donation process.',
+      categories: [14]
+    },
+    {
+      title: 'Gaming Community App',
+      description:
+        'Create a community app for gamers to connect, discuss games, and find teammates. Design a fun and engaging user interface.',
+      categories: [15]
+    },
+    {
+      title: 'Automotive Dealership Website',
+      description:
+        'Design a website for automotive dealerships to showcase and sell cars. Ensure a user-friendly search and vehicle comparison experience.',
+      categories: [16]
+    },
+    {
+      title: 'Manufacturing Process Optimization Dashboard',
+      description:
+        'Develop a dashboard for industrial and manufacturing companies to monitor and optimize their production processes. Prioritize data visualization and real-time insights.',
+      categories: [17]
+    },
+    {
+      title: 'Crop Yield Prediction Platform',
+      description:
+        'Create a platform for farmers to predict crop yields based on various factors. Design an easy-to-use tool with data inputs and yield forecasting.',
+      categories: [18]
+    },
+    {
+      title: 'E-learning Platform for Agriculture',
+      description:
+        'Design an e-learning platform specifically for agriculture-related courses. Prioritize user-friendly course navigation, quizzes, and progress tracking.',
+      categories: [18]
+    },
+    {
+      title: 'Finance Management App for Farmers',
+      description:
+        'Develop a financial management app for farmers to track expenses, income, and investments. Design an intuitive interface tailored to agriculture finance.',
+      categories: [18]
+    },
+    {
+      title: 'Agricultural Equipment Rental Marketplace',
+      description:
+        'Create an online marketplace for renting agricultural equipment. Ensure a user-friendly platform for equipment owners and renters.',
+      categories: [18]
+    },
+    {
+      title: 'Eco-Friendly Farming Practices App',
+      description:
+        'Design an app that educates farmers on eco-friendly and sustainable farming practices. Prioritize user-friendly guides, videos, and progress tracking.',
+      categories: [18]
+    },
+    {
+      title: 'Online Agriculture Product Auction Platform',
+      description:
+        'Develop an online auction platform for agriculture products. Design an intuitive bidding and listing process for sellers and buyers.',
+      categories: [18]
+    },
+    {
+      title: 'Artisanal Food Delivery App',
+      description:
+        'Create a food delivery app specializing in artisanal and local food products. Prioritize an appealing marketplace and a simple ordering process.',
+      categories: [1]
+    },
+    {
+      title: 'Telemedicine Platform for Specialists',
+      description:
+        'Design a telemedicine platform connecting patients with specialist doctors. Prioritize a user-friendly appointment scheduling and video consultation experience.',
+      categories: [2]
+    },
+    {
+      title: 'Interactive Math Learning App',
+      description:
+        'Develop an app for interactive math learning. Prioritize a user-friendly interface for solving math problems, quizzes, and progress tracking.',
+      categories: [3]
+    },
+    {
+      title: 'Cryptocurrency Portfolio Tracker',
+      description:
+        'Create a cryptocurrency portfolio tracking app. Design an easy-to-use interface for adding and tracking crypto assets, as well as monitoring market data.',
+      categories: [4]
+    },
+    {
+      title: 'Music Discovery and Sharing Platform',
+      description:
+        'Design a music platform for discovering and sharing songs and playlists. Prioritize user-friendly music search, playlist creation, and social sharing features.',
+      categories: [7]
+    },
+    {
+      title: 'Adventure Travel Planning App',
+      description:
+        'Develop a travel planning app for adventure enthusiasts. Design an easy-to-use platform for discovering adventure tours, booking experiences, and creating itineraries.',
+      categories: [6]
+    },
+    {
+      title: 'Video Game Streaming Service',
+      description:
+        'Create a platform for streaming video game content. Design an engaging user interface for discovering games, watching live streams, and interacting with gamers.',
+      categories: [15]
+    },
+    {
+      title: 'Local Event Discovery App',
+      description:
+        'Design an app for discovering and attending local events. Prioritize an intuitive interface for event search, ticket purchase, and event reminders.',
+      categories: [6]
+    },
+    {
+      title: 'Online Newspaper Subscription Platform',
+      description:
+        'Develop an online platform for newspaper subscriptions. Design a user-friendly interface for browsing and subscribing to newspapers.',
+      categories: [8]
+    },
+    {
+      title: 'Virtual Real Estate Tours',
+      description:
+        'Create a virtual real estate tour platform. Design a user-friendly interface for viewing 360-degree property tours and exploring real estate listings.',
+      categories: [9]
+    },
+    {
+      title: 'Plant-Based Recipe App',
+      description:
+        'Design an app for plant-based cooking enthusiasts. Prioritize a user-friendly recipe search, meal planning, and ingredient shopping features.',
+      categories: [10]
+    },
+    {
+      title: 'Public Transportation Navigation App',
+      description:
+        'Develop a public transportation navigation app. Design an intuitive interface for finding routes, checking schedules, and tracking public transportation options.',
+      categories: [11]
+    },
+    {
+      title: 'Wellness and Meditation App',
+      description:
+        'Create a wellness and meditation app for relaxation and mindfulness. Prioritize a calming user interface for guided meditation and stress relief activities.',
+      categories: [12]
+    },
+    {
+      title: 'Citizen Engagement Portal',
+      description:
+        'Design a portal for citizens to engage with their local government. Ensure easy access to services, information, and feedback submission.',
+      categories: [13]
+    },
+    {
+      title: 'Charity Fundraising Website',
+      description:
+        'Develop a charity fundraising website. Design a user-friendly platform for creating fundraising campaigns, donations, and progress tracking.',
+      categories: [14]
+    },
+    {
+      title: 'eSports Tournament Platform',
+      description:
+        'Create a platform for organizing and participating in eSports tournaments. Design an interface for managing tournaments, teams, and match schedules.',
+      categories: [15]
+    },
+    {
+      title: 'Auto Dealership Mobile App',
+      description:
+        'Design a mobile app for automotive dealerships. Prioritize an intuitive user interface for browsing vehicle inventory, scheduling test drives, and contacting dealers.',
+      categories: [16]
+    },
+    {
+      title: 'Factory Production Monitoring System',
+      description:
+        'Develop a production monitoring system for factories. Design a dashboard with real-time production data, analytics, and quality control features.',
+      categories: [17]
+    },
+    {
+      title: 'Crop Irrigation Optimization Tool',
+      description:
+        'Create a tool for farmers to optimize crop irrigation. Design an interface for setting irrigation schedules, monitoring moisture levels, and conserving water resources.',
+      categories: [18]
     }
   ]
 }
