@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 import MdiGithub from '@/components/Icons/MdiGithub.vue'
-import ToggleDarkMode from '@/components/AppHeader/ToggleDarkMode.vue'
+import AppToggleDarkMode from '@/components/AppToggleDarkMode/AppToggleDarkMode.vue'
 
 const GITHUB_URL = 'https://github.com/MartinsOnuoha/what-should-i-design'
 </script>
 
 <template>
   <div class="HeaderActions">
-    <ToggleDarkMode />
+    <AppToggleDarkMode />
     <a
       :href="GITHUB_URL"
       target="_blank"
@@ -21,11 +21,8 @@ const GITHUB_URL = 'https://github.com/MartinsOnuoha/what-should-i-design'
 </template>
 
 <style lang="scss">
-.HeaderActions {
-  @apply flex text-2xl text-gray-600;
-
-  &__github {
-    @apply ml-3 border-l-gray-300 border-l pl-3;
-  }
+@import 'HeaderActions';
+@media (prefers-color-scheme: dark) {
+  @import 'HeaderActions.dark';
 }
 </style>

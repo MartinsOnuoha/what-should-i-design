@@ -20,9 +20,12 @@ const toggleDropdown = () => {
 }
 const closeDropdown = () => (dropdown.value = false)
 const openDropdown = () => (dropdown.value = true)
-const selectCategory = (category: Category) => {
-  selectedValue.value = category
-  closeDropdown()
+const selectCategory = (id: number) => {
+  const category = categories.find((category) => category.id === id)
+  if (category) {
+    selectedValue.value = category
+    closeDropdown()
+  }
 }
 const filterCategories = () => {
   categoriesList.value = categories
@@ -47,6 +50,7 @@ const filterCategories = () => {
         name="category-dropdown"
         placeholder="Filter by Categories"
         aria-haspopup="true"
+        autocomplete="off"
         @input="filterCategories"
         @focusin="openDropdown"
         v-model="filterValue"
@@ -71,14 +75,14 @@ const filterCategories = () => {
       aria-labelledby="category-dropdown-btn"
     >
       <li
-        v-for="(category, index) in categoriesList"
+        v-for="({ name, emoji, id }, index) in categoriesList"
         :key="index"
-        @click="selectCategory(category)"
+        @click="selectCategory(id)"
         role="option"
         tabindex="0"
       >
-        <span class="mr-2">{{ category.emoji }}</span>
-        <div>{{ category.name }}</div>
+        <span class="mr-2">{{ emoji }}</span>
+        <div>{{ name }}</div>
       </li>
     </ul>
   </div>
@@ -86,4 +90,8 @@ const filterCategories = () => {
 
 <style lang="scss">
 @import 'AppFilter';
+
+@media (prefers-color-scheme: dark) {
+  @import 'AppFilter.dark';
+}
 </style>

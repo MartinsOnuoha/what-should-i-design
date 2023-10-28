@@ -1,5 +1,19 @@
 body[color-scheme='dark'] {
-  @import '@/views/HomeView.dark';
   @import '@/components/AppCategory/AppCategory.dark';
-  @import '@/components/AppStatementCard/_AppStatementCard.dark';
+  @import '@/components/AppFilter/AppFilter.dark';
+  @import '@/components/AppHeader/HeaderActions.dark';
+  @import '@/components/AppSideBanner/AppSideBanner.dark';
+  @import '@/components/AppStatementCard/AppStatementCard.dark';
+  @import '@/components/AppToggleDarkMode/AppToggleDarkMode.dark';
+  @import '@/views/HomeView.dark';
+}
+
+body[color-scheme='light'] {
+  @import '@/components/AppCategory/AppCategory';
+  @import '@/components/AppFilter/AppFilter';
+  @import '@/components/AppHeader/HeaderActions';
+  @import '@/components/AppSideBanner/AppSideBanner';
+  @import '@/components/AppStatementCard/AppStatementCard';
+  @import '@/components/AppToggleDarkMode/AppToggleDarkMode';
+  @import '@/views/HomeView';
 }
