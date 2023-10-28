@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { useDark } from '@vueuse/core'
 import type { PropType } from 'vue'
 import type { Category } from '@/stores/db'
 import { randomChoice } from '@/utils/util'
