@@ -1,7 +1,7 @@
 <script lang="ts" setup>
+import { useDark } from '@vueuse/core'
 import type { PropType } from 'vue'
 import type { Category } from '@/stores/db'
-import { onMounted } from 'vue'
 import { randomChoice } from '@/utils/util'
 
 defineProps({
@@ -27,7 +27,4 @@ const selectedGroup: Array<string> = randomChoice(categoryColorGroups)
 
 <style lang="scss">
 @import 'AppCategory';
-@media (prefers-color-scheme: dark) {
-  @import 'AppCategory.dark';
-}
 </style>
