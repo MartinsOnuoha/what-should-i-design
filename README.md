@@ -9,3 +9,6 @@ Well [Fake Clients](https://fakeclients.com/) isn't completely Free and is limit
 ![what-should-i-design-banner-image]()
 
 
+## Repo Activity
+
+![Alt](https://repobeats.axiom.co/api/embed/d0f4e2f19ffbbe2f682b66cfac37f24903e1d7fd.svg "Repobeats analytics image")
