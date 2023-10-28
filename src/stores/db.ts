@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import statements from './statements.db'
 import categories from './categories.db'
+import { shuffle } from '@/utils/util'
 
 export type Statement = {
   title: string
@@ -20,5 +21,9 @@ export const useDBStore = defineStore('db', {
       statements: statements.data
     }
   },
-  getters: {}
+  getters: {
+    formattedStatements: (state) => {
+      return [...new Set(shuffle(state.statements))]
+    }
+  }
 })
