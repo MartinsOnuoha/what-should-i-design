@@ -1,0 +1,23 @@
+
+directive @cached(
+    maxAge: Int
+    inheritMaxAge: Boolean
+) on QUERY
+
+type Category {
+    id: ID
+    name: String
+    emoji: String
+}
+
+type Statement {
+  id: ID
+  title: String
+  description: String
+  category: Category
+}
+
+type Query {
+    categories: [Category!]!
+    statements: [Statement!]!
+}

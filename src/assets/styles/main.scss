@@ -10,6 +10,10 @@
 body {
   font-family: 'Ibarra Real Nova', serif;
   color: var(--color-dark-text);
+
+  input:disabled {
+    @apply cursor-not-allowed;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

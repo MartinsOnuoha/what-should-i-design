@@ -17,6 +17,9 @@ jobs:
       VITE_APP_IMG: ${{ vars.VITE_APP_IMG }}
       VITE_APP_KEYWORDS: ${{ vars.VITE_APP_KEYWORDS }}
       VITE_APP_LANG: ${{ vars.VITE_APP_LANG }}
+      VITE_APP_GRAPHQL_URL: ${{ vars.VITE_APP_GRAPHQL_URL }}
+      VITE_APP_GRAPHQL_SECRET: ${{ secrets.VITE_APP_GRAPHQL_SECRET }}
+
     runs-on: ubuntu-latest
     steps:
       - name: Check variables
@@ -27,6 +30,7 @@ jobs:
           echo "VITE_APP_IMG: $VITE_APP_IMG"
           echo "VITE_APP_KEYWORDS: $VITE_APP_KEYWORDS"
           echo "VITE_APP_LANG: $VITE_APP_LANG"
+          echo "VITE_APP_GRAPHQL_URL: $VITE_APP_GRAPHQL_URL"
       - uses: actions/checkout@v2
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0

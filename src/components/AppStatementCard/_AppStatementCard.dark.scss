@@ -3,4 +3,7 @@
 }
 .AppStatementCard {
   @apply shadow-2xl border-none bg-[var(--color-dark)] text-gray-300 hover:bg-gradient-to-tr from-pink-900 via-[var(--color-dark)] to-[var(--color-dark)];
+  &__skeleton {
+    @apply bg-gray-600;
+  }
 }
