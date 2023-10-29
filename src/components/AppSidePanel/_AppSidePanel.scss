@@ -1,0 +1,23 @@
+.AppSidePanel {
+  @apply h-screen w-full absolute flex z-50 transition-all;
+  &__overlay {
+    @apply w-full bg-opacity-90 bg-black flex justify-center items-center;
+  }
+  &__content {
+    @apply w-3/6 bg-white shadow-2xl text-gray-800 p-8;
+  }
+  &__header {
+    button {
+      @apply border rounded-full p-2 mb-14 text-lg transition-all;
+      &:hover {
+        @apply bg-[var(--color-ghostwhite)] text-red-500;
+      }
+    }
+  }
+  &__title {
+    @apply text-2xl;
+  }
+  &__description {
+    @apply border mt-5 text-xl text-gray-700 p-5 rounded-lg;
+  }
+}

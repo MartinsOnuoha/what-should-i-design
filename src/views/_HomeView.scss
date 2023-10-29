@@ -1,5 +1,5 @@
 .HomeView {
-  @apply flex h-screen;
+  @apply flex h-screen relative;
   background-color: var(--color-ghostwhite);
 
   main {
