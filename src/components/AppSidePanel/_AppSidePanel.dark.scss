@@ -1,0 +1,12 @@
+.AppSidePanel {
+  &__content {
+    @apply bg-[var(--color-dark)] text-gray-300;
+  }
+  &__header {
+    button {
+      &:hover {
+        @apply bg-gray-800;
+      }
+    }
+  }
+}
