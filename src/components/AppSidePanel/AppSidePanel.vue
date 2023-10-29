@@ -1,13 +1,12 @@
 <script lang="ts" setup>
 import type { PropType } from 'vue'
-import type { Statement } from '@/stores/db'
 import MdiClose from '@/components/Icons/MdiClose.vue'
 import AppCategory from '@/components/AppCategory/AppCategory.vue'
-import { useDBStore } from '@/stores/db'
+import type { Statement } from '@/entities/Statement'
 
 const emit = defineEmits(['panel:close'])
 
-const props = defineProps({
+defineProps({
   open: { type: Boolean, default: false },
   statement: { type: Object as PropType<Statement | null> }
 })
@@ -15,9 +14,6 @@ const props = defineProps({
 const closePanel = () => {
   emit('panel:close')
 }
-const getCategories = useDBStore().categories.filter(
-  (category) => props.statement?.categories.includes(category.id)
-)
 </script>
 
 <template>
@@ -28,8 +24,8 @@ const getCategories = useDBStore().categories.filter(
         <button @click="closePanel"><MdiClose /></button>
       </div>
       <h2 class="AppSidePanel__title">{{ statement.description }}</h2>
-      <div class="mt-3 mb-3">
-        <AppCategory v-for="(category, index) in getCategories" :key="index" :category="category" />
+      <div v-if="statement.category" class="mt-3 mb-3">
+        <AppCategory :category="statement.category" />
       </div>
     </div>
   </div>

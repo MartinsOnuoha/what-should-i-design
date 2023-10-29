@@ -1,37 +1,43 @@
 <script lang="ts" setup>
-import { type Category, useDBStore } from '@/stores/db'
-import { type Ref, ref } from 'vue'
+import { computed, type Ref, ref, watch } from 'vue'
 import MdiFilterMenu from '@/components/Icons/MdiFilterMenu.vue'
 import MdiFilterRemoveOutline from '@/components/Icons/MdiFilterRemoveOutline.vue'
+import type { Category } from '@/entities/Category'
+import { useQuery } from '@vue/apollo-composable'
+import { GET_CATEGORIES } from '@/graphql/queries/categories'
 
-const { categories } = useDBStore()
-
+const { result, loading } = useQuery(GET_CATEGORIES)
+const categories = computed(() => result?.value?.categories)
+let categoriesList: Category[] = []
 const dropdown = ref(false)
 const categorySearch = ref(null)
 const filterValue = ref('')
-const categoriesList = ref(categories)
+
+watch(result, (newValue) => {
+  if (newValue?.categories) {
+    categoriesList = [...newValue.categories]
+  }
+})
+
 const selectedValue: Ref<Category | null> = ref(null)
 const toggleDropdown = () => {
   dropdown.value = !dropdown.value
-
   dropdown.value && categorySearch.value
     ? (categorySearch.value as HTMLInputElement).focus()
     : false
 }
+
 const closeDropdown = () => (dropdown.value = false)
 const openDropdown = () => (dropdown.value = true)
-const selectCategory = (id: number) => {
-  const category = categories.find((category) => category.id === id)
-  if (category) {
-    selectedValue.value = category
-    closeDropdown()
-  }
+const selectCategory = (category: Category) => {
+  selectedValue.value = category
+  closeDropdown()
 }
 const filterCategories = () => {
-  categoriesList.value = categories
+  categoriesList = categories.value
 
   if (filterValue.value) {
-    categoriesList.value = categoriesList.value.filter((category) =>
+    categoriesList = categoriesList.filter((category) =>
       category.name.toLowerCase().includes(filterValue.value.toLowerCase())
     )
     return
@@ -45,6 +51,7 @@ const filterCategories = () => {
       <input
         ref="categorySearch"
         tabindex="0"
+        :disabled="loading"
         data-toggle="dropdown"
         type="search"
         name="category-dropdown"
@@ -75,14 +82,14 @@ const filterCategories = () => {
       aria-labelledby="category-dropdown-btn"
     >
       <li
-        v-for="({ name, emoji, id }, index) in categoriesList"
+        v-for="(category, index) in categoriesList"
         :key="index"
-        @click="selectCategory(id)"
+        @click="selectCategory(category)"
         role="option"
         tabindex="0"
       >
-        <span class="mr-2">{{ emoji }}</span>
-        <div>{{ name }}</div>
+        <span class="mr-2">{{ category.emoji }}</span>
+        <div>{{ category.name }}</div>
       </li>
     </ul>
   </div>

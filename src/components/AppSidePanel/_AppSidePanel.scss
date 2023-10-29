@@ -1,7 +1,7 @@
 .AppSidePanel {
   @apply h-screen w-full absolute flex z-50 transition-all;
   &__overlay {
-    @apply w-full bg-opacity-90 bg-black flex justify-center items-center;
+    @apply w-full bg-gradient-to-tr from-purple-800 to-transparent bg-opacity-70 flex justify-center items-center;
   }
   &__content {
     @apply w-3/6 bg-white shadow-2xl text-gray-800 p-8;

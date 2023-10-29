@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { PropType } from 'vue'
-import type { Category } from '@/stores/db'
 import { randomChoice } from '@/utils/util'
+import type { Category } from '@/entities/Category'
 
 defineProps({
   category: { type: Object as PropType<Category>, required: true }
