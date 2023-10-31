@@ -11,11 +11,21 @@ body {
   font-family: 'Ibarra Real Nova', serif;
   color: var(--color-dark-text);
 
-  input:disabled {
-    @apply cursor-not-allowed;
+  input {
+    &:disabled {
+      @apply cursor-not-allowed;
+    }
+
+    &:focus {
+      @apply outline-amber-500;
+    }
   }
 }
-
+.font {
+  &--fira {
+    font-family: 'Fira Mono', serif;
+  }
+}
 @media (prefers-color-scheme: dark) {
   body {
     color: var(--color-ghostwhite);

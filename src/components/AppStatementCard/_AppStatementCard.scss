@@ -19,7 +19,7 @@
       }
     }
     &__categories {
-      @apply absolute bottom-2 left-0 w-full p-5;
+      @apply absolute bottom-2 left-0 w-full p-5 flex justify-between items-center;
     }
   }
 }

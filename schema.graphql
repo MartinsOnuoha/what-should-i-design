@@ -9,15 +9,28 @@ type Category {
     name: String
     emoji: String
 }
-
+type Sample {
+  id: ID
+  url: String
+}
 type Statement {
   id: ID
   title: String
+  samples: [Sample]
   description: String
   category: Category
 }
 
+
+input Int_comparison_exp {
+  _eq: Int
+}
+
+input statements_bool_exp {
+  category_id: Int_comparison_exp
+}
+
 type Query {
     categories: [Category!]!
-    statements: [Statement!]!
+    statements(where: statements_bool_exp): [Statement!]!
 }

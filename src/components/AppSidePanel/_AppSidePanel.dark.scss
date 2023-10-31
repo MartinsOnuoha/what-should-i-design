@@ -5,8 +5,14 @@
   &__header {
     button {
       &:hover {
-        @apply bg-gray-800;
+        @apply bg-gray-800 text-gray-300;
       }
     }
+  }
+  &__description {
+    @apply text-gray-300 border-gray-100 bg-transparent;
+  }
+  &__links {
+    @apply bg-transparent;
   }
 }
