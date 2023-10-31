@@ -18,7 +18,7 @@ watch(result, (newValue) => {
     categoriesList = [...newValue.categories]
   }
 })
-
+const emits = defineEmits(['category:selected'])
 const selectedValue: Ref<Category | null> = ref(null)
 const toggleDropdown = () => {
   dropdown.value = !dropdown.value
@@ -31,7 +31,10 @@ const closeDropdown = () => (dropdown.value = false)
 const openDropdown = () => (dropdown.value = true)
 const selectCategory = (category: Category) => {
   selectedValue.value = category
+  filterValue.value = category.name
   closeDropdown()
+
+  emits('category:selected', selectedValue.value)
 }
 const filterCategories = () => {
   categoriesList = categories.value
@@ -55,7 +58,7 @@ const filterCategories = () => {
         data-toggle="dropdown"
         type="search"
         name="category-dropdown"
-        placeholder="Filter by Categories"
+        :placeholder="selectedValue?.name || 'Filter by Categories'"
         aria-haspopup="true"
         autocomplete="off"
         @input="filterCategories"

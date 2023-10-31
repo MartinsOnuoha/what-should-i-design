@@ -9,12 +9,19 @@ import AppSidePanel from '@/components/AppSidePanel/AppSidePanel.vue'
 import type { Statement } from '@/entities/Statement'
 import { GET_STATEMENTS } from '@/graphql/queries/statements'
 import { useQuery } from '@vue/apollo-composable'
-
-const { result, loading } = useQuery(GET_STATEMENTS)
-const statements = computed(() => shuffle(result?.value.statements))
+import type { Category } from '@/entities/Category'
 
 const selectedStatement: Ref<Statement | null> = ref(null)
+const filter = ref({})
 
+const { result, loading } = useQuery(GET_STATEMENTS, filter)
+const statements = computed(() => shuffle(result?.value.statements))
+
+const setSelectedCategory = (category: Category) => {
+  filter.value = {
+    where: { category_id: { _eq: category.id } }
+  }
+}
 const selectStatement = (statement: Statement) => {
   selectedStatement.value = statement
 }
@@ -28,7 +35,7 @@ const deselectStatement = () => {
     <AppSideBanner class="w-2/4" />
     <main>
       <header class="HomeView__header">
-        <AppFilter />
+        <AppFilter @category:selected="setSelectedCategory" />
         <HeaderActions />
       </header>
       <section v-if="!loading && statements.length" class="HomeView__content">
@@ -40,7 +47,7 @@ const deselectStatement = () => {
         />
       </section>
       <section v-else class="HomeView__content">
-        <AppStatementCard v-for="x in 10" :key="x" :statement="{ title: '', description: '' }" />
+        <AppStatementCard v-for="x in 10" :key="x" />
       </section>
     </main>
     <AppSidePanel

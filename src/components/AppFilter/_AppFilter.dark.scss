@@ -1,6 +1,6 @@
 .AppFilter {
   input {
-    @apply bg-transparent;
+    @apply bg-transparent text-[var(--color-ghostwhite)];
   }
   &__icon {
     @apply text-[var(--color-ghostwhite)];

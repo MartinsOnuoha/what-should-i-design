@@ -4,9 +4,6 @@
 
   input {
     @apply w-full h-full p-3 rounded-lg relative bg-white;
-    &:focus {
-      @apply outline-amber-500;
-    }
   }
 
   &__icon {
