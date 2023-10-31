@@ -13,9 +13,9 @@ const dropdown = ref(false)
 const categorySearch = ref(null)
 const filterValue = ref('')
 
-watch(result, (newValue) => {
-  if (newValue?.categories) {
-    categoriesList = [...newValue.categories]
+watch(result, (newResult) => {
+  if (newResult?.categories) {
+    categoriesList = [{ id: 0, name: 'All' }, ...newResult.categories]
   }
 })
 const emits = defineEmits(['category:selected'])

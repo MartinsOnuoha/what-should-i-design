@@ -18,6 +18,10 @@ const { result, loading } = useQuery(GET_STATEMENTS, filter)
 const statements = computed(() => shuffle(result?.value.statements))
 
 const setSelectedCategory = (category: Category) => {
+  if (!category.id) {
+    filter.value = {}
+    return
+  }
   filter.value = {
     where: { category_id: { _eq: category.id } }
   }
