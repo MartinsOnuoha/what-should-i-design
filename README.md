@@ -7,7 +7,9 @@ Problem is, You don't know what to design?.
 
 Well [Fake Clients](https://fakeclients.com/) isn't completely Free and is limited, and [WhatshouldIdesign.com](http://www.whatshouldidesign.com/) is all jokes. So here's an alternative completely free and crowdsourced collection of real-world design problems to try.
 
-![what-should-i-design-banner-image]()
+![what-should-i-design-banner-image](https://whatshouldidesign.space/screen1.webp)
+![what-should-i-design-banner-image](https://whatshouldidesign.space/screen2.webp)
+![what-should-i-design-banner-image](https://whatshouldidesign.space/screen3.webp)
 
 ## How to Contribute
 
