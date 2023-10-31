@@ -18,7 +18,7 @@ jobs:
       VITE_APP_GRAPHQL_URL: ${{ vars.VITE_APP_GRAPHQL_URL }}
       VITE_APP_GRAPHQL_SECRET: ${{ secrets.VITE_APP_GRAPHQL_SECRET }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
