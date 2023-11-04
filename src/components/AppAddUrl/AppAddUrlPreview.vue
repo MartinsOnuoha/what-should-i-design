@@ -13,7 +13,9 @@ const ogUrl = computed(() => props.ogItem?.ogUrl ?? '')
 const props = defineProps({
   ogItem: {
     type: Object as PropType<OgItem>
-  }
+  },
+  loading: Boolean,
+  hasError: Boolean
 })
 </script>
 
@@ -25,6 +27,9 @@ const props = defineProps({
     :aria-description="ogDescription"
     class="AppAddUrlPreview font--fira"
   >
+    <div class="AppAddUrlPreview__overlay">
+      {{ !loading && !hasError ? 'Inspiration Added 🎉' : 'Adding URL...' }}
+    </div>
     <MdiCheckCircleOutline class="absolute right-1 top-1 text-green-400 text-xl" />
     <div
       class="AppAddUrlPreview__img"
