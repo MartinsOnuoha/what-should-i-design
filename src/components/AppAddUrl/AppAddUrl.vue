@@ -6,7 +6,7 @@ import { ADD_SAMPLE } from '@/graphql/mutations/samples'
 import type { Statement } from '@/entities/Statement'
 import { GET_STATEMENTS } from '@/graphql/queries/statements'
 import { useValidateOgUrl } from '@/composables/useValidateOgUrl'
-import AppAddUrlError from '@/components/AppAddUrl/AppAddUrlError.vue'
+import AppAddUrlError from '@/components/AppAddUrl/AppAddUrlSuccessError.vue'
 import AppAddUrlPreview from '@/components/AppAddUrl/AppAddUrlPreview.vue'
 
 const props = defineProps({
@@ -24,7 +24,11 @@ watch(data, (n) => {
   }
 })
 
-const { loading: loadingMutation, mutate: addSample } = useMutation(ADD_SAMPLE, () => ({
+const {
+  loading: loadingMutation,
+  mutate: addSample,
+  error: mutationError
+} = useMutation(ADD_SAMPLE, () => ({
   variables: {
     objects: {
       statement_id: props.statement?.id,
@@ -54,6 +58,7 @@ const { loading: loadingMutation, mutate: addSample } = useMutation(ADD_SAMPLE, 
         required
         name="add-url"
         v-model="inputValue"
+        :disabled="loadingValidation || loadingMutation"
         placeholder="e.g https://dribbble.com/shots..."
         type="text"
       />
@@ -62,11 +67,16 @@ const { loading: loadingMutation, mutate: addSample } = useMutation(ADD_SAMPLE, 
       :disabled="!canCreate || loadingValidation || loadingMutation"
       @click="validate(inputValue)"
     >
-      Add Inspiration ✨
+      {{ loadingValidation ? 'Validating URL...' : 'Add Inspiration ✨' }}
     </button>
   </div>
   <AppAddUrlError :msg="data?.error ? 'Provided URL is invalid ❌' : ''" />
-  <AppAddUrlPreview v-if="!data?.error && data?.data" :og-item="data.data" />
+  <AppAddUrlPreview
+    v-if="!data?.error && data?.data"
+    :og-item="data.data"
+    :loading="loadingMutation"
+    :has-error="!!mutationError"
+  />
 </template>
 
 <style lang="scss">
