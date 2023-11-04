@@ -1,6 +1,6 @@
 .AppFilter {
   font-family: 'Fira Mono', sans-serif;
-  @apply rounded-lg w-2/5 cursor-pointer relative bg-transparent border text-sm;
+  @apply rounded-lg w-full md:w-2/5 mr-2 cursor-pointer relative bg-transparent border text-sm;
 
   input {
     @apply w-full h-full p-3 rounded-lg relative bg-white;

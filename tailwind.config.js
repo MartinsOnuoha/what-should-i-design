@@ -3,7 +3,11 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx,vue}'],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        '3xl': '1921px',
+      }
+    },
   },
   plugins: [],
 }

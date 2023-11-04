@@ -1,11 +1,11 @@
 .AppSidePanel {
-  @apply h-screen w-full absolute flex z-50 transition-all duration-200 ease-in;
+  @apply min-h-screen w-full absolute flex z-50 transition-all duration-200 ease-in;
 
   &__overlay {
-    @apply w-full bg-gradient-to-bl from-purple-800 to-transparent bg-opacity-70 flex justify-center items-center;
+    @apply w-full hidden md:flex justify-center items-center bg-gradient-to-bl from-purple-800 to-transparent bg-opacity-70;
   }
   &__content {
-    @apply w-3/6 bg-[var(--color-ghostwhite)] shadow-2xl text-gray-800 p-8;
+    @apply w-full md:w-3/6 bg-[var(--color-ghostwhite)] shadow-2xl text-gray-800 p-8;
   }
   &__header {
     button {
