@@ -7,14 +7,14 @@ Problem is, You don't know what to design?.
 
 Well [Fake Clients](https://fakeclients.com/) isn't completely Free and is limited, and [WhatshouldIdesign.com](http://www.whatshouldidesign.com/) is all jokes. So here's an alternative completely free and crowdsourced collection of real-world design problems to try.
 
-![what-should-i-design-banner-image](https://whatshouldidesign.space/screen1.webp)
-![what-should-i-design-banner-image](https://whatshouldidesign.space/screen2.webp)
-![what-should-i-design-banner-image](https://whatshouldidesign.space/screen3.webp)
-
 ## Features
 - Community Source UI/UX Design problem Statements
+  ![what-should-i-design-banner-image](https://whatshouldidesign.space/screen1.webp#screens)
 - Community Sourced Samples for each Statement
+  ![what-should-i-design-banner-image](https://whatshouldidesign.space/screen3.webp#screens)
 - Category Specific Statements
+  ![what-should-i-design-banner-image](https://whatshouldidesign.space/screen2.webp#screens)
+  
 
 ## How to Contribute
 
@@ -25,6 +25,15 @@ One recommended source would be [ChatGPT](https://chat.openai.com/).
 
 Head over to [OpenAI chat](https://chat.openai.com/) and start a conversation to request as many design problem statement within any of the following categories [below](#problem-statements).
 
+Alternatively you can join the community and add more Design Sample links. Head over to [whatshouldidesign.space](https://whatshouldidesign.space), select a category and click on any problem statement. Feel free to add a design sample link.
+At the moment we're supporting links from: 
+
+- [Dribble](https://dribbble.com/)
+- [Figma](https://www.figma.com/community) 
+- [Behance](https://behance.net)
+- [Craftwork](https://craftwork.design)
+
+This is of course not limited, if you would like support for design links on other platforms feel free to [open an issue](https://github.com/MartinsOnuoha/what-should-i-design/issues/new).  
 ### Code
 
 This project runs on Vue and Vite, feel free to create [issues](https://github.com/MartinsOnuoha/what-should-i-design/issues) first. Fork and open MRs for improvements.
