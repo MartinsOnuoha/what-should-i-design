@@ -43,32 +43,64 @@ This project runs on Vue and Vite, feel free to create [issues](https://github.c
 <details open>
     <summary>🛒 E-commerce</summary>
 
-| Title                                      | Description                                                                                                                                                                                                     | Samples |
-|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| Artisanal Food Delivery App                | Create a food delivery app specializing in artisanal and local food products. Prioritize an appealing marketplace and a simple ordering process.                                                                |         |
-| Sustainable Fashion Marketplace            | Create a sustainable fashion e-commerce platform that connects environmentally conscious shoppers with eco-friendly clothing brands. Design a user-friendly shopping experience with a focus on sustainability. |         |
-| Grocery Delivery App                       | Design a mobile app for a grocery delivery service. Ensure a seamless user experience for browsing products, adding items to the cart, scheduling deliveries, and tracking orders.                              |         |
-| E-commerce Marketplace for Handmade Crafts | Design an e-commerce platform exclusively for handmade craft products. Focus on creating a visually appealing and user-friendly marketplace for artisans and craft enthusiasts.                                 |         |
+| Title                                      | Description                                                                                                                                                                                                     |
+|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Artisanal Food Delivery App                | Create a food delivery app specializing in artisanal and local food products. Prioritize an appealing marketplace and a simple ordering process.                                                                |
+| Sustainable Fashion Marketplace            | Create a sustainable fashion e-commerce platform that connects environmentally conscious shoppers with eco-friendly clothing brands. Design a user-friendly shopping experience with a focus on sustainability. |
+| Grocery Delivery App                       | Design a mobile app for a grocery delivery service. Ensure a seamless user experience for browsing products, adding items to the cart, scheduling deliveries, and tracking orders.                              |
+| E-commerce Marketplace for Handmade Crafts | Design an e-commerce platform exclusively for handmade craft products. Focus on creating a visually appealing and user-friendly marketplace for artisans and craft enthusiasts.                                 |
 </details>
+
 
 <details>
     <summary>🏥 Healthcare</summary>
+
+| Title                                 | Description                                                                                                                                                                              |
+|---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Mental Health & Wellness App          | Develop a mental health and wellness app that offers guided meditation, mood tracking, and self-help resources. Prioritize a calming and supportive user interface.                      |
+| Patient Health Records Portal         | Create a patient-centric portal for accessing and managing personal health records. Design a secure, user-friendly platform for viewing medical history, test results, and appointments. |
+| Telemedicine Platform for Specialists | Design a telemedicine platform connecting patients with specialist doctors. Prioritize a user-friendly appointment scheduling and video consultation experience.                         |
+| Healthcare Appointment Scheduling App | Create a mobile app for scheduling healthcare appointments. Ensure a smooth booking process, reminders, and easy access to medical information.                                          |
 </details>
 
 <details>
     <summary>📚 Education</summary>
+
+| Title                                  | Description                                                                                                                                               |
+|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Education Platform for Remote Learning | Design an online education platform for remote learning. Provide interactive content, user-friendly navigation, and tools for both students and teachers. |
+| Interactive Math Learning App          | Develop an app for interactive math learning. Prioritize a user-friendly interface for solving math problems, quizzes, and progress tracking.             |
+
 </details>
 
 <details>
     <summary>💰 Finance</summary>
+
+| Title                                | Description                                                                                                                                               |
+|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cryptocurrency Portfolio Tracker     | Create a cryptocurrency portfolio tracking app. Design an easy-to-use interface for adding and tracking crypto assets, as well as monitoring market data. |
+| Financial Budgeting and Planning App | Develop a budgeting and financial planning app. Design an interface that helps users manage their finances, set goals, and track expenses effortlessly.   |
+
 </details>
 
 <details>
     <summary>📱 Social Media</summary>
+
+| Title                                  | Description                                                                                                                                       |
+|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| Social Media Community for Book Lovers | Create a social media platform dedicated to book lovers. Design a user-friendly space for sharing book recommendations, reviews, and discussions. |
+
 </details>
 
 <details>
     <summary>✈️ Travel and Hospitality</summary>
+
+| Title                           | Description                                                                                                                                                             |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Local Event Discovery App       | Design an app for discovering and attending local events. Prioritize an intuitive interface for event search, ticket purchase, and event reminders.                     |
+| Travel Planning and Booking App | Design a mobile app for travel enthusiasts to plan and book trips. Prioritize a seamless booking process, itinerary management, and recommendations.                    |
+| Adventure Travel Planning App   | Develop a travel planning app for adventure enthusiasts. Design an easy-to-use platform for discovering adventure tours, booking experiences, and creating itineraries. |
+
 </details>
 
 <details>
