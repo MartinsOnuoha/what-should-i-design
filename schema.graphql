@@ -30,7 +30,20 @@ input statements_bool_exp {
   category_id: Int_comparison_exp
 }
 
+
 type Query {
     categories: [Category!]!
     statements(where: statements_bool_exp): [Statement!]!
+}
+
+input samples_insert_input {
+    statement_id: ID
+    url: String
+}
+type samples_mutation_response {
+    affected_rows: Int
+}
+
+type Mutation {
+    insert_samples(objects: [samples_insert_input!]!): samples_mutation_response
 }

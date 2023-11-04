@@ -39,7 +39,7 @@ const closePanel = () => {
         <UilCommentShare class="mr-1" />
         Community Inspirations
       </h3>
-      <AppAddUrl />
+      <AppAddUrl v-if="statement" :statement="statement" />
       <div class="AppSidePanel__links">
         <AppSidePanelSamples :samples="samples" />
       </div>
