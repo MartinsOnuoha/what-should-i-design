@@ -15,7 +15,7 @@ const selectedStatement: Ref<Statement | null> = ref(null)
 const filter = ref({})
 
 const { result, loading } = useQuery(GET_STATEMENTS, filter)
-const statements = computed(() => result?.value?.statements || [])
+const statements = computed(() => shuffle(result?.value?.statements || []))
 
 watch(statements, (statementsNewValue: Statement[]) => {
   if (selectedStatement.value) {

@@ -52,6 +52,7 @@ const { loading: loadingMutation, mutate: addSample } = useMutation(ADD_SAMPLE, 
     >
       <input
         required
+        autocomplete="off"
         name="add-url"
         v-model="inputValue"
         placeholder="e.g https://dribbble.com/shots..."
