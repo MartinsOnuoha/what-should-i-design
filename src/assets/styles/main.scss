@@ -11,13 +11,19 @@ body {
   font-family: 'Ibarra Real Nova', serif;
   color: var(--color-dark-text);
 
-  input {
+  input,
+  button {
     &:disabled {
       @apply cursor-not-allowed;
     }
 
     &:focus {
       @apply outline-amber-500;
+    }
+  }
+  button {
+    &:disabled {
+      @apply opacity-50;
     }
   }
 }

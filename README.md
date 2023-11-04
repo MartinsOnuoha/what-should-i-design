@@ -1,25 +1,31 @@
 # What Should I Design? 🎨
+
 [![Build & Deploy 🚀](https://github.com/MartinsOnuoha/what-should-i-design/actions/workflows/firebase-hosting-merge.yml/badge.svg)](https://github.com/MartinsOnuoha/what-should-i-design/actions/workflows/firebase-hosting-merge.yml)
 
-You're fresh out of learning UI/UX Design, you want to get your hands dirty with _almost_ real-world example problems to harness your design skills and build up a portfolio. 
+You're fresh out of learning UI/UX Design, you want to get your hands dirty with _almost_ real-world example problems to harness your design skills and build up a portfolio.
 Problem is, You don't know what to design?.
-
 
 Well [Fake Clients](https://fakeclients.com/) isn't completely Free and is limited, and [WhatshouldIdesign.com](http://www.whatshouldidesign.com/) is all jokes. So here's an alternative completely free and crowdsourced collection of real-world design problems to try.
 
 ![what-should-i-design-banner-image](https://whatshouldidesign.space/screen1.webp)
 ![what-should-i-design-banner-image](https://whatshouldidesign.space/screen2.webp)
-![what-should-i-design-banner-image](https://whatshouldidesign.space/screen3.webp)
+
+## Features
+- Community Source UI/UX Design problem Statements
+- Community Sourced Samples for each Statement
+- Category Specific Statements
 
 ## How to Contribute
 
 ### Content
-You can contribute to this project by sourcing more problem statements from anywhere, or just coming up with yours (you silly genius). 
-One recommended source would be [ChatGPT](https://chat.openai.com/). 
 
-Head over to [OpenAI chat](https://chat.openai.com/) and start a conversation to request as many design problem statement within any of the following categories [below](#problem-statements). 
+You can contribute to this project by sourcing more problem statements from anywhere, or just coming up with yours (you silly genius).
+One recommended source would be [ChatGPT](https://chat.openai.com/).
+
+Head over to [OpenAI chat](https://chat.openai.com/) and start a conversation to request as many design problem statement within any of the following categories [below](#problem-statements).
 
 ### Code
+
 This project runs on Vue and Vite, feel free to create [issues](https://github.com/MartinsOnuoha/what-should-i-design/issues) first. Fork and open MRs for improvements.
 
 ## Problem Statements
@@ -27,12 +33,12 @@ This project runs on Vue and Vite, feel free to create [issues](https://github.c
 <details open>
     <summary>🛒 E-commerce</summary>
 
-| Title                                      | Description                                                                                                                                                                                                     | 
-|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Artisanal Food Delivery App                | Create a food delivery app specializing in artisanal and local food products. Prioritize an appealing marketplace and a simple ordering process.                                                                |
-| Sustainable Fashion Marketplace            | Create a sustainable fashion e-commerce platform that connects environmentally conscious shoppers with eco-friendly clothing brands. Design a user-friendly shopping experience with a focus on sustainability. |
-| Grocery Delivery App                       | Design a mobile app for a grocery delivery service. Ensure a seamless user experience for browsing products, adding items to the cart, scheduling deliveries, and tracking orders.                              |
-| E-commerce Marketplace for Handmade Crafts | Design an e-commerce platform exclusively for handmade craft products. Focus on creating a visually appealing and user-friendly marketplace for artisans and craft enthusiasts.                                 |
+| Title                                      | Description                                                                                                                                                                                                     | Samples |
+|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| Artisanal Food Delivery App                | Create a food delivery app specializing in artisanal and local food products. Prioritize an appealing marketplace and a simple ordering process.                                                                |         |
+| Sustainable Fashion Marketplace            | Create a sustainable fashion e-commerce platform that connects environmentally conscious shoppers with eco-friendly clothing brands. Design a user-friendly shopping experience with a focus on sustainability. |         |
+| Grocery Delivery App                       | Design a mobile app for a grocery delivery service. Ensure a seamless user experience for browsing products, adding items to the cart, scheduling deliveries, and tracking orders.                              |         |
+| E-commerce Marketplace for Handmade Crafts | Design an e-commerce platform exclusively for handmade craft products. Focus on creating a visually appealing and user-friendly marketplace for artisans and craft enthusiasts.                                 |         |
 </details>
 
 <details>
@@ -242,8 +248,6 @@ This project runs on Vue and Vite, feel free to create [issues](https://github.c
 <details>
     <summary>🎮 Blockchain and Cryptocurrency Gaming</summary>
 </details>
-
-
 
 Here's a [sample chat](https://chat.openai.com/share/2aa6268a-7a4e-4740-bca4-f068e100126a)
 

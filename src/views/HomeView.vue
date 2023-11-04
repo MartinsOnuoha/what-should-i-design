@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, type Ref, ref } from 'vue'
+import { computed, type Ref, ref, watch } from 'vue'
 import shuffle from 'lodash.shuffle'
 import AppSideBanner from '@/components/AppSideBanner/AppSideBanner.vue'
 import AppStatementCard from '@/components/AppStatementCard/AppStatementCard.vue'
@@ -15,8 +15,15 @@ const selectedStatement: Ref<Statement | null> = ref(null)
 const filter = ref({})
 
 const { result, loading } = useQuery(GET_STATEMENTS, filter)
-const statements = computed(() => shuffle(result?.value.statements))
+const statements = computed(() => result?.value?.statements || [])
 
+watch(statements, (statementsNewValue: Statement[]) => {
+  if (selectedStatement.value) {
+    selectedStatement.value = statementsNewValue.find(
+      (statement) => statement.id === selectedStatement.value?.id
+    ) as Statement | null
+  }
+})
 const setSelectedCategory = (category: Category) => {
   if (!category.id) {
     filter.value = {}
