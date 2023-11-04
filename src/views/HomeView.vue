@@ -11,6 +11,25 @@ import { GET_STATEMENTS } from '@/graphql/queries/statements'
 import { useQuery } from '@vue/apollo-composable'
 import type { Category } from '@/entities/Category'
 
+import { useScroll, watchThrottled } from '@vueuse/core'
+import AppScrollTop from '@/components/AppScrollTop/AppScrollTop.vue'
+
+const el = ref<HTMLElement | null>(null)
+const { y } = useScroll(el, { behavior: () => 'smooth' })
+const showScrollToTop = ref(false)
+
+watchThrottled(
+  y,
+  (n) => {
+    if (n > 800) {
+      showScrollToTop.value = true
+    } else {
+      showScrollToTop.value = false
+    }
+  },
+  { throttle: 1000 }
+)
+
 const selectedStatement: Ref<Statement | null> = ref(null)
 const filter = ref({})
 
@@ -42,9 +61,9 @@ const deselectStatement = () => {
 </script>
 
 <template>
-  <section class="HomeView">
+  <section class="HomeView" id="HomeView">
     <AppSideBanner class="w-2/4" />
-    <main>
+    <main ref="el">
       <header class="HomeView__header">
         <AppFilter @category:selected="setSelectedCategory" />
         <HeaderActions />
@@ -53,6 +72,7 @@ const deselectStatement = () => {
         <AppStatementCard
           v-for="(statement, index) in statements"
           :key="index"
+          :id="index"
           :statement="statement"
           @click="selectStatement(statement)"
         />
@@ -61,6 +81,7 @@ const deselectStatement = () => {
         <AppStatementCard v-for="x in 10" :key="x" />
       </section>
     </main>
+    <AppScrollTop :class="showScrollToTop ? 'opacity-100' : 'opacity-0'" />
     <AppSidePanel
       :open="!!selectedStatement"
       @panel:close="deselectStatement"

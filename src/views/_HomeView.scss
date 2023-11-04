@@ -3,7 +3,7 @@
   background-color: var(--color-ghostwhite);
 
   main {
-    @apply w-2/4 p-5 max-h-screen overflow-y-scroll;
+    @apply w-full md:w-2/4 p-5 max-h-screen overflow-y-scroll;
   }
 
   &__header {
@@ -11,6 +11,6 @@
   }
 
   &__content {
-    @apply grid grid-cols-2 gap-4;
+    @apply grid grid-cols-1 md:grid-cols-2 3xl:grid-cols-3 gap-4;
   }
 }

@@ -21,7 +21,7 @@ defineProps({
 <style lang="scss">
 .AppSidePanelSamples {
   &__links {
-    @apply grid grid-cols-2 gap-4;
+    @apply grid grid-cols-1 md:grid-cols-2 3xl:grid-cols-3 gap-4;
   }
   &__nolinks {
     @apply flex flex-col items-center p-5 w-full;

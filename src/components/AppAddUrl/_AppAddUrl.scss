@@ -1,8 +1,11 @@
 .AppAddUrl {
-  @apply flex mb-5 text-sm items-baseline;
+  @apply flex flex-col md:flex-row mb-5 text-sm items-baseline;
   input {
     @apply p-3 rounded-lg border transition-all w-full;
     max-height: 44px;
+  }
+  label {
+    @apply w-full;
   }
   button {
     @apply p-3 bg-black text-white mt-3 rounded-lg w-44;
