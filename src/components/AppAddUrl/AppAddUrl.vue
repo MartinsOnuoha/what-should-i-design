@@ -56,6 +56,7 @@ const {
     >
       <input
         required
+        autocomplete="off"
         name="add-url"
         v-model="inputValue"
         :disabled="loadingValidation || loadingMutation"
