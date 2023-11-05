@@ -90,6 +90,7 @@ const filterCategories = () => {
         @click="selectCategory(category)"
         role="option"
         tabindex="0"
+        :class="[selectedValue?.id === category.id ? 'selected' : false]"
       >
         <span class="mr-2">{{ category.emoji }}</span>
         <div>{{ category.name }}</div>

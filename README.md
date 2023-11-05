@@ -105,30 +105,72 @@ This project runs on Vue and Vite, feel free to create [issues](https://github.c
 
 <details>
     <summary>🎥 Entertainment</summary>
+
+| Title                                | Description                                                                                                                                                     |
+|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Entertainment Streaming Service      | Create a streaming service platform for movies and TV shows. Design an engaging and user-friendly interface for content discovery and viewing.                  |
+| Music Discovery and Sharing Platform | Design a music platform for discovering and sharing songs and playlists. Prioritize user-friendly music search, playlist creation, and social sharing features. |
+
 </details>
 
 <details>
     <summary>📰 News and Media</summary>
+    
+| Title                                    | Description                                                                                                                          |
+|------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| News Aggregation and Personalization App | Develop a news app that aggregates and personalizes news content. Design an interface that tailors news to individual preferences.   |
+| Online Newspaper Subscription Platform   | Develop an online platform for newspaper subscriptions. Design a user-friendly interface for browsing and subscribing to newspapers. |
+
 </details>
 
 <details>
     <summary>🏠 Real Estate</summary>
+  
+| Title                                | Description                                                                                                                                            |
+|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Real Estate Property Listing Website | Design a website for listing and searching real estate properties. Ensure an easy-to-navigate platform for property buyers and sellers.                |
+| Virtual Real Estate Tours            | Create a virtual real estate tour platform. Design a user-friendly interface for viewing 360-degree property tours and exploring real estate listings. |
+
 </details>
 
 <details>
     <summary>🍔 Food and Dining</summary>
+
+| Title                     | Description                                                                                                                                   |
+|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Plant-Based Recipe App    | Design an app for plant-based cooking enthusiasts. Prioritize a user-friendly recipe search, meal planning, and ingredient shopping features. |
+| Food Delivery Service App | Create a food delivery app with a focus on user-friendly order placement, restaurant discovery, and real-time order tracking.                 |
+
 </details>
 
 <details>
     <summary>🚗 Transportation</summary>
+
+| Title                                | Description                                                                                                                                                       |
+|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Public Transportation Navigation App | Develop a public transportation navigation app. Design an intuitive interface for finding routes, checking schedules, and tracking public transportation options. |
+| Ride-Sharing App                     | Design a ride-sharing app for convenient transportation. Prioritize a simple booking process, route optimization, and user safety features.                       |
+
 </details>
 
 <details>
     <summary>💪 Fitness and Wellness</summary>
+  
+| Title                             | Description                                                                                                                                                  |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wellness and Meditation App       | Create a wellness and meditation app for relaxation and mindfulness. Prioritize a calming user interface for guided meditation and stress relief activities. |
+| Fitness and Wellness Tracking App | Develop a fitness and wellness app for tracking workouts, nutrition, and health metrics. Design a motivating and intuitive user interface.                   |
+
 </details>
 
 <details>
     <summary>🏛️ Government and Civic</summary>
+
+| Title                                 | Description                                                                                                                               |
+|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| Citizen Engagement Portal             | Design a portal for citizens to engage with their local government. Ensure easy access to services, information, and feedback submission. |
+| Government Service Information Portal | Create an information portal for government services and resources. Ensure easy access to government information and online services.     |
+
 </details>
 
 <details>
