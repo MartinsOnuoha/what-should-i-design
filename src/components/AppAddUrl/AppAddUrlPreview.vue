@@ -28,7 +28,7 @@ const props = defineProps({
     class="AppAddUrlPreview font--fira"
   >
     <div class="AppAddUrlPreview__overlay">
-      {{ !loading && !hasError ? 'Inspiration Added 🎉' : 'Adding URL...' }}
+      {{ !loading && !hasError ? 'New Link Added 🎉' : 'Adding URL...' }}
     </div>
     <MdiCheckCircleOutline class="absolute right-1 top-1 text-green-400 text-xl" />
     <div

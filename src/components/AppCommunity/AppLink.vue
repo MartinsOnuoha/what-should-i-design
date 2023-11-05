@@ -9,7 +9,7 @@ const props = defineProps({
   link: { type: Object as PropType<{ url: string }>, required: true }
 })
 
-const formattedLink = computed(() => props.link.url.toLowerCase().replace('https://', ''))
+const formattedLink = computed(() => props.link.url.toLowerCase().replace(/^https?:\/\//i, ''))
 
 const icon = computed(() => {
   switch (true) {

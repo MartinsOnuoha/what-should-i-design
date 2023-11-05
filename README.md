@@ -33,6 +33,8 @@ At the moment we're supporting links from:
 - [Behance](https://behance.net)
 - [Craftwork](https://craftwork.design)
 
+![what-should-i-design-inspiration-gif](https://whatshouldidesign.space/screen4.gif)
+
 This is of course not limited, if you would like support for design links on other platforms feel free to [open an issue](https://github.com/MartinsOnuoha/what-should-i-design/issues/new).  
 ### Code
 
@@ -175,10 +177,23 @@ This project runs on Vue and Vite, feel free to create [issues](https://github.c
 
 <details>
     <summary>🤝 Nonprofits and Charities</summary>
+
+| Title                       | Description                                                                                                                                          |
+|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Charity Fundraising Website | Develop a charity fundraising website. Design a user-friendly platform for creating fundraising campaigns, donations, and progress tracking.         |
+| Nonprofit Donation Platform | Design a platform for nonprofit organizations to receive donations and support their causes. Prioritize a user-friendly and secure donation process. |
+
 </details>
 
 <details>
     <summary>🎮 Gaming</summary>
+
+| Title                        | Description                                                                                                                                                      |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Video Game Streaming Service | Create a platform for streaming video game content. Design an engaging user interface for discovering games, watching live streams, and interacting with gamers. |
+| Gaming Community App         | Create a community app for gamers to connect, discuss games, and find teammates. Design a fun and engaging user interface.                                       |
+| eSports Tournament Platform  | Create a platform for organizing and participating in eSports tournaments. Design an interface for managing tournaments, teams, and match schedules.             |
+
 </details>
 
 <details>
