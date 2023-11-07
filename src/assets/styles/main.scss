@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Ibarra+Real+Nova:wght@400;500;600;700&display=swap');
 @import 'variables';
 @import 'scrollbar';
 @import 'color-scheme';
@@ -29,7 +29,7 @@ body {
 }
 .font {
   &--fira {
-    font-family: 'Fira Mono', serif;
+    font-family: 'Fira Mono', monospace;
   }
 }
 @media (prefers-color-scheme: dark) {

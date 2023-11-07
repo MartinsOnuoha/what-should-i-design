@@ -16,4 +16,10 @@ const scrollToTop = () => {
 .AppScrollTop {
   @apply p-2 rounded-full shadow-lg text-3xl absolute bottom-5 right-5 bg-amber-100 transition-all;
 }
+
+@media (prefers-color-scheme: dark) {
+  .AppScrollTop {
+    @apply text-gray-700;
+  }
+}
 </style>

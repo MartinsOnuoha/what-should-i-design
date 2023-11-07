@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { PropType } from 'vue'
-import { randomChoice } from '@/utils/util'
+import { randomChoice, truncate } from '@/utils/util'
 import type { Category } from '@/entities/Category'
 
 defineProps({
@@ -18,9 +18,13 @@ const selectedGroup: Array<string> = randomChoice(categoryColorGroups)
 </script>
 
 <template>
-  <span :class="['AppCategory', ...selectedGroup]">
+  <span
+    :class="['AppCategory', ...selectedGroup]"
+    :title="category.name"
+    :aria-label="category.name"
+  >
     <span class="mr-1">{{ category.emoji }}</span>
-    {{ category.name }}
+    {{ truncate(category.name, 20) }}
   </span>
 </template>
 

@@ -9,7 +9,8 @@
   &__dropdown {
     @apply bg-[var(--color-dark)] text-[var(--color-ghostwhite)];
     li {
-      &:hover {
+      &:hover,
+      &.selected {
         @apply text-gray-800;
       }
     }

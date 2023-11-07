@@ -1,13 +1,18 @@
 <script lang="ts" setup>
-import { computed, type PropType, ref, watch } from 'vue'
+import { computed, defineAsyncComponent, type PropType, ref, watch } from 'vue'
 import { isValidUrl } from '@/utils/util'
 import { useMutation } from '@vue/apollo-composable'
 import { ADD_SAMPLE } from '@/graphql/mutations/samples'
 import type { Statement } from '@/entities/Statement'
 import { GET_STATEMENTS } from '@/graphql/queries/statements'
 import { useValidateOgUrl } from '@/composables/useValidateOgUrl'
-import AppAddUrlError from '@/components/AppAddUrl/AppAddUrlSuccessError.vue'
-import AppAddUrlPreview from '@/components/AppAddUrl/AppAddUrlPreview.vue'
+
+const AppAddUrlPreview = defineAsyncComponent(
+  () => import('@/components/AppAddUrl/AppAddUrlPreview.vue')
+)
+const AppAddUrlError = defineAsyncComponent(
+  () => import('@/components/AppAddUrl/AppAddUrlSuccessError.vue')
+)
 
 const props = defineProps({
   statement: { type: Object as PropType<Statement>, required: true }

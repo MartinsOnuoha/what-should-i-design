@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { computed, type Ref, ref, watch } from 'vue'
+import { computed, defineAsyncComponent, type Ref, ref, watch } from 'vue'
 import shuffle from 'lodash.shuffle'
-import AppSideBanner from '@/components/AppSideBanner/AppSideBanner.vue'
 import AppStatementCard from '@/components/AppStatementCard/AppStatementCard.vue'
 import AppFilter from '@/components/AppFilter/AppFilter.vue'
 import HeaderActions from '@/components/AppHeader/HeaderActions.vue'
-import AppSidePanel from '@/components/AppSidePanel/AppSidePanel.vue'
 import type { Statement } from '@/entities/Statement'
 import { GET_STATEMENTS } from '@/graphql/queries/statements'
 import { useQuery } from '@vue/apollo-composable'
@@ -18,14 +16,17 @@ const el = ref<HTMLElement | null>(null)
 const { y } = useScroll(el, { behavior: () => 'smooth' })
 const showScrollToTop = ref(false)
 
+const AppSidePanel = defineAsyncComponent(
+  () => import('@/components/AppSidePanel/AppSidePanel.vue')
+)
+const AppSideBanner = defineAsyncComponent(
+  () => import('@/components/AppSideBanner/AppSideBanner.vue')
+)
+
 watchThrottled(
   y,
   (n) => {
-    if (n > 800) {
-      showScrollToTop.value = true
-    } else {
-      showScrollToTop.value = false
-    }
+    showScrollToTop.value = n > 800
   },
   { throttle: 1000 }
 )

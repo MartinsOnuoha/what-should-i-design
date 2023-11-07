@@ -1,9 +1,12 @@
 <script lang="ts" setup>
 import type { PropType } from 'vue'
-import { computed } from 'vue'
+import { computed, defineAsyncComponent } from 'vue'
 import { truncate } from '@/utils/util'
 import type { OgItem } from '@/composables/useValidateOgUrl'
-import MdiCheckCircleOutline from '@/components/Icons/MdiCheckCircleOutline.vue'
+
+const MdiCheckCircleOutline = defineAsyncComponent(
+  () => import('@/components/Icons/MdiCheckCircleOutline.vue')
+)
 
 const ogImage = computed(() => (props.ogItem?.ogImage?.length ? props.ogItem.ogImage[0].url : ''))
 const ogTitle = computed(() => props.ogItem?.ogTitle ?? '')

@@ -49,7 +49,7 @@ const filterCategories = () => {
 </script>
 
 <template>
-  <div v-click-outside="closeDropdown" class="AppFilter" id="AppFilter">
+  <div v-click-outside="closeDropdown" class="AppFilter font--fira" id="AppFilter">
     <label for="category-dropdown">
       <input
         ref="categorySearch"
