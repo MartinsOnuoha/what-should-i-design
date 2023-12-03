@@ -19,9 +19,6 @@ jobs:
       VITE_APP_GRAPHQL_SECRET: ${{ secrets.VITE_APP_GRAPHQL_SECRET }}
     steps:
       - uses: actions/checkout@v4
-      - run: npm ci && npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WHATSHOULDIDESIGN }}'
-          projectId: whatshouldidesign
+      - run: npm ci && npm run build && npm run test:unit
+        name: 'build & test'
+
