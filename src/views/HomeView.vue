@@ -2,6 +2,7 @@
 import { computed, defineAsyncComponent, type Ref, ref, watch } from 'vue'
 import shuffle from 'lodash.shuffle'
 import AppStatementCard from '@/components/AppStatementCard/AppStatementCard.vue'
+import AppSideBanner from '@/components/AppSideBanner/AppSideBanner.vue'
 import AppFilter from '@/components/AppFilter/AppFilter.vue'
 import HeaderActions from '@/components/AppHeader/HeaderActions.vue'
 import type { Statement } from '@/entities/Statement'
@@ -18,9 +19,6 @@ const showScrollToTop = ref(false)
 
 const AppSidePanel = defineAsyncComponent(
   () => import('@/components/AppSidePanel/AppSidePanel.vue')
-)
-const AppSideBanner = defineAsyncComponent(
-  () => import('@/components/AppSideBanner/AppSideBanner.vue')
 )
 
 watchThrottled(
