@@ -30,7 +30,7 @@
     "@vue/apollo-composable": "^4.0.2",
     "@vueuse/core": "^10.11.0",
     "click-outside-vue3": "^4.0.1",
-    "graphql": "^16.8.1",
+    "graphql": "^16.8.2",
     "graphql-tag": "^2.12.6",
     "lodash.shuffle": "^4.2.0",
     "pinia": "^2.1.7",
