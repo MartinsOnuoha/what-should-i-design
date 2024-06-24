@@ -43,7 +43,7 @@
     "@types/jest": "^29.5.12",
     "@types/jsdom": "^21.1.7",
     "@types/lodash.shuffle": "^4.2.9",
-    "@types/node": "^20.14.7",
+    "@types/node": "^20.14.8",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vue/eslint-config-prettier": "^9.0.0",
     "@vue/eslint-config-typescript": "^13.0.0",
