@@ -26,7 +26,7 @@
     "commit": "npm run type-check && npm run lint && npm run format && git add . && cz && git push origin head"
   },
   "dependencies": {
-    "@apollo/client": "^3.10.5",
+    "@apollo/client": "^3.10.6",
     "@vue/apollo-composable": "^4.0.2",
     "@vueuse/core": "^10.11.0",
     "click-outside-vue3": "^4.0.1",
