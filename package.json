@@ -33,7 +33,7 @@
     "graphql": "^16.9.0",
     "graphql-tag": "^2.12.6",
     "lodash.shuffle": "^4.2.0",
-    "pinia": "^2.1.7",
+    "pinia": "^2.2.0",
     "vue": "^3.4.35",
     "vue-router": "^4.4.2"
   },
