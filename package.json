@@ -52,7 +52,7 @@
     "autoprefixer": "^10.4.20",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "cz-emoji-conventional": "^1.0.2",
+    "cz-emoji-conventional": "^1.1.0",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.27.0",
     "jsdom": "^25.0.0",
