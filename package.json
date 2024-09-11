@@ -54,7 +54,7 @@
     "cz-conventional-changelog": "^3.3.0",
     "cz-emoji-conventional": "^1.1.0",
     "eslint": "^8.57.0",
-    "eslint-plugin-vue": "^9.27.0",
+    "eslint-plugin-vue": "^9.28.0",
     "jsdom": "^25.0.0",
     "npm-run-all2": "^6.2.2",
     "postcss": "^8.4.41",
