@@ -53,7 +53,7 @@
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "cz-emoji-conventional": "^1.1.0",
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
     "eslint-plugin-vue": "^9.28.0",
     "jsdom": "^25.0.0",
     "npm-run-all2": "^6.2.3",
