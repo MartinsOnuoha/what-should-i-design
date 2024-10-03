@@ -63,7 +63,7 @@
     "tailwindcss": "^3.4.13",
     "typescript": "~5.6.2",
     "vite": "^5.4.8",
-    "vitest": "^2.1.1",
+    "vitest": "^2.1.2",
     "vue-tsc": "^2.1.6"
   },
   "repository": {
