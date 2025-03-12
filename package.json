@@ -28,7 +28,7 @@
   "dependencies": {
     "@apollo/client": "^3.13.2",
     "@vue/apollo-composable": "^4.2.2",
-    "@vueuse/core": "^12.8.2",
+    "@vueuse/core": "^13.0.0",
     "click-outside-vue3": "^4.0.1",
     "graphql": "^16.10.0",
     "graphql-tag": "^2.12.6",
