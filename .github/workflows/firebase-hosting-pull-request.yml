@@ -16,7 +16,6 @@ jobs:
       VITE_APP_KEYWORDS: ${{ vars.VITE_APP_KEYWORDS }}
       VITE_APP_LANG: ${{ vars.VITE_APP_LANG }}
       VITE_APP_GRAPHQL_URL: ${{ vars.VITE_APP_GRAPHQL_URL }}
-      VITE_APP_GRAPHQL_SECRET: ${{ secrets.VITE_APP_GRAPHQL_SECRET }}
     steps:
       - uses: actions/checkout@v4
       - run: npm ci && npm run build && npm run test:unit
