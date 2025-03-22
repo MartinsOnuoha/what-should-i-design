@@ -9,7 +9,7 @@ import {
 const httpLink = createHttpLink({
   uri: import.meta.env.VITE_APP_GRAPHQL_URL,
   headers: {
-    'x-hasura-admin-secret': import.meta.env.VITE_APP_GRAPHQL_SECRET
+    'x-hasura-role': 'public'
   }
 })
 const links = [httpLink]
