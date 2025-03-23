@@ -1,0 +1,20 @@
+@mixin darkTheme {
+  .AppSidePanel {
+    &__content {
+      @apply bg-[var(--color-dark)] text-gray-300;
+    }
+    &__header {
+      button {
+        &:hover {
+          @apply bg-gray-800 text-gray-300;
+        }
+      }
+    }
+    &__description {
+      @apply text-gray-300 border-gray-100 bg-transparent;
+    }
+    &__links {
+      @apply bg-transparent;
+    }
+  }
+}

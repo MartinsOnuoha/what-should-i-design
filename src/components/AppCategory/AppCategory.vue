@@ -29,5 +29,5 @@ const selectedGroup: Array<string> = randomChoice(categoryColorGroups)
 </template>
 
 <style lang="scss">
-@import 'AppCategory';
+@use 'AppCategory.scss' as *;
 </style>

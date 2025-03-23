@@ -92,8 +92,10 @@ const deselectStatement = () => {
 </template>
 
 <style lang="scss">
-@import 'HomeView';
+@use 'HomeView' as *;
+@use 'HomeView.dark' as HomeView;
+
 @media (prefers-color-scheme: dark) {
-  @import 'HomeView.dark';
+  @include HomeView.darkTheme;
 }
 </style>

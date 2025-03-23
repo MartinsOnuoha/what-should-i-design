@@ -86,9 +86,10 @@ const {
 </template>
 
 <style lang="scss">
-@import 'AppAddUrl';
+@use 'AppAddUrl.scss' as *;
+@use 'AppAddUrl.dark.scss' as appAddUrlDark;
 
-@media (prefers-color-scheme: dark) {
-  @import 'AppAddUrl.dark';
+.dark-theme {
+  @include appAddUrlDark.darkTheme;
 }
 </style>

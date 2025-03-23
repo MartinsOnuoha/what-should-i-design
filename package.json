@@ -1,6 +1,7 @@
 {
   "name": "what-should-i-design",
   "version": "0.0.0",
+  "type": "module",
   "license": "(MIT OR Apache-2.0)",
   "keywords": [
     "ui/ux",

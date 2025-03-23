@@ -1,5 +1,5 @@
-.HeaderActions {
-  &__github {
+@mixin darkTheme {
+  .ToggleDarkMode {
     @apply text-[var(--color-ghostwhite)];
   }
 }

@@ -48,8 +48,10 @@ const closePanel = () => {
 </template>
 
 <style lang="scss">
-@import 'AppSidePanel';
+@use 'AppSidePanel' as *;
+@use 'AppSidePanel.dark' as AppSidePanel;
+
 @media (prefers-color-scheme: dark) {
-  @import 'AppSidePanel.dark';
+  @include AppSidePanel.darkTheme;
 }
 </style>

@@ -1,0 +1,5 @@
+@mixin darkTheme {
+  .HomeView {
+    @apply bg-[var(--color-dark)];
+  }
+}

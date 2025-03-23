@@ -100,9 +100,10 @@ const filterCategories = () => {
 </template>
 
 <style lang="scss">
-@import 'AppFilter';
+@use 'AppFilter' as *;
+@use 'AppFilter.dark' as AppFilter;
 
 @media (prefers-color-scheme: dark) {
-  @import 'AppFilter.dark';
+  @include AppFilter.darkTheme;
 }
 </style>
