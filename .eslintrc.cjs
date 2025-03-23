@@ -1,6 +1,7 @@
-import '@rushstack/eslint-patch/modern-module-resolution'
+/* eslint-env node */
+require('@rushstack/eslint-patch/modern-module-resolution')
 
-export default {
+module.exports = {
   root: true,
   'extends': [
     'plugin:vue/vue3-essential',
