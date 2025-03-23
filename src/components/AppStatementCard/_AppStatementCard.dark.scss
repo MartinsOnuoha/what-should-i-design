@@ -1,9 +1,0 @@
-.AppStatementCardContainer {
-  @apply rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1;
-}
-.AppStatementCard {
-  @apply shadow-2xl border-none bg-[var(--color-dark)] text-gray-300 hover:bg-gradient-to-tr from-pink-900 via-[var(--color-dark)] to-[var(--color-dark)];
-  &__skeleton {
-    @apply bg-gray-600;
-  }
-}

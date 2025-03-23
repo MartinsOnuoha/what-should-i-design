@@ -36,5 +36,5 @@ const icon = computed(() => {
 </template>
 
 <style lang="scss">
-@import 'AppLink';
+@use 'AppLink' as *;
 </style>

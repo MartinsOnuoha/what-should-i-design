@@ -31,9 +31,10 @@ defineProps({
 </template>
 
 <style lang="scss">
-@import 'AppStatementCard';
+@use 'AppStatementCard' as *;
+@use 'AppStatementCard.dark' as AppStatementCard;
 
 @media (prefers-color-scheme: dark) {
-  @import 'AppStatementCard.dark';
+  @include AppStatementCard.darkTheme;
 }
 </style>

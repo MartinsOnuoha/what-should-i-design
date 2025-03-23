@@ -21,8 +21,10 @@ const GITHUB_URL = 'https://github.com/MartinsOnuoha/what-should-i-design'
 </template>
 
 <style lang="scss">
-@import 'HeaderActions';
+@use 'HeaderActions' as *;
+@use 'HeaderActions.dark' as HeaderActions;
+
 @media (prefers-color-scheme: dark) {
-  @import 'HeaderActions.dark';
+  @include HeaderActions.darkTheme;
 }
 </style>

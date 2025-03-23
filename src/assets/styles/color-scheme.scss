@@ -1,25 +1,33 @@
-body[color-scheme='dark'] {
-  @import '@/components/AppAddUrl/AppAddUrl.dark';
-  @import '@/components/AppAddUrl/AppAddUrlPreview.dark';
-  @import '@/components/AppFilter/AppFilter.dark';
-  @import '@/components/AppHeader/HeaderActions.dark';
-  @import '@/components/AppSideBanner/AppSideBanner.dark';
-  @import '@/components/AppSidePanel/AppSidePanel.dark';
-  @import '@/components/AppStatementCard/AppStatementCard.dark';
-  @import '@/components/AppToggleDarkMode/AppToggleDarkMode.dark';
-  @import '@/views/HomeView.dark';
-}
+@use '@/components/AppAddUrl/AppAddUrl.dark' as AppAddUrlDark;
+@use '@/components/AppAddUrl/AppAddUrlPreview.dark' as AppAddUrlPreviewDark;
+@use '@/components/AppFilter/AppFilter.dark' as AppFilterDark;
+@use '@/components/AppHeader/HeaderActions.dark' as HeaderActionsDark;
+@use '@/components/AppSideBanner/AppSideBanner.dark' as AppSideBannerDark;
+@use '@/components/AppSidePanel/AppSidePanel.dark' as AppSidePanelDark;
+@use '@/components/AppStatementCard/AppStatementCard.dark' as AppStatementCardDark;
+@use '@/components/AppToggleDarkMode/AppToggleDarkMode.dark' as AppToggleDarkModeDark;
+@use '@/views/HomeView.dark' as HomeViewDark;
 
-body[color-scheme='light'] {
-  @import '@/components/AppAddUrl/AppAddUrl';
-  @import '@/components/AppAddUrl/AppAddUrlPreview';
-  @import '@/components/AppCategory/AppCategory';
-  @import '@/components/AppFilter/AppFilter';
-  @import '@/components/AppHeader/HeaderActions';
-  @import '@/components/AppSideBanner/AppSideBanner';
-  @import '@/components/AppSidePanel/AppSidePanel';
-  @import '@/components/AppStatementCard/AppStatementCard';
-  @import '@/components/AppToggleDarkMode/AppToggleDarkMode';
-  @import '@/components/AppCommunity/AppLink';
-  @import '@/views/HomeView';
+@use '@/components/AppAddUrl/AppAddUrl' as *;
+@use '@/components/AppAddUrl/AppAddUrlPreview' as *;
+@use '@/components/AppCategory/AppCategory' as *;
+@use '@/components/AppFilter/AppFilter' as *;
+@use '@/components/AppHeader/HeaderActions' as *;
+@use '@/components/AppSideBanner/AppSideBanner' as *;
+@use '@/components/AppSidePanel/AppSidePanel' as *;
+@use '@/components/AppStatementCard/AppStatementCard' as *;
+@use '@/components/AppToggleDarkMode/AppToggleDarkMode' as *;
+@use '@/components/AppCommunity/AppLink.scss' as *;
+@use '@/views/HomeView.scss' as *;
+
+body[color-scheme='dark'] {
+  @include AppAddUrlDark.darkTheme;
+  @include AppAddUrlPreviewDark.darkTheme;
+  @include AppFilterDark.darkTheme;
+  @include HeaderActionsDark.darkTheme;
+  @include AppSideBannerDark.darkTheme;
+  @include AppSidePanelDark.darkTheme;
+  @include AppStatementCardDark.darkTheme;
+  @include AppToggleDarkModeDark.darkTheme;
+  @include HomeViewDark.darkTheme;
 }

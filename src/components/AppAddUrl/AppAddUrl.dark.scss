@@ -1,0 +1,7 @@
+@mixin darkTheme {
+  .AppAddUrl {
+    input {
+      @apply bg-transparent;
+    }
+  }
+}

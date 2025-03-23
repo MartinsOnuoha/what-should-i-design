@@ -26,8 +26,10 @@ const toggleDark = useToggle(isDark)
 </template>
 
 <style scoped lang="scss">
-@import 'AppToggleDarkMode';
+@use 'AppToggleDarkMode' as *;
+@use 'AppToggleDarkMode.dark' as AppToggleDarkMode;
+
 @media (prefers-color-scheme: dark) {
-  @import 'AppToggleDarkMode.dark';
+  @include AppToggleDarkMode.darkTheme;
 }
 </style>

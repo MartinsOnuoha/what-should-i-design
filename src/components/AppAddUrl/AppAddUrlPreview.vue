@@ -49,8 +49,10 @@ const props = defineProps({
 </template>
 
 <style lang="scss">
-@import 'AppAddUrlPreview';
+@use 'AppAddUrlPreview' as *;
+@use 'AppAddUrlPreview.dark' as AppAddUrlPreview;
+
 @media (prefers-color-scheme: dark) {
-  @import 'AppAddUrlPreview.dark';
+  @include AppAddUrlPreview.darkTheme;
 }
 </style>

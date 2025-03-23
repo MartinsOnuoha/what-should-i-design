@@ -1,12 +1,15 @@
+@use 'variables.scss';
+@use 'scrollbar.scss';
+@use 'color-scheme.scss';
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Ibarra+Real+Nova:wght@400;500;600;700&display=swap');
-@import 'variables';
-@import 'scrollbar';
-@import 'color-scheme';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  overflow: hidden;
+}
 body {
   font-family: 'Ibarra Real Nova', serif;
   color: var(--color-dark-text);

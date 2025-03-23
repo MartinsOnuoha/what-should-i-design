@@ -14,9 +14,10 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
-@import 'AppSideBanner';
+@use 'AppSideBanner' as *;
+@use 'AppSideBanner.dark' as AppSideBanner;
 
 @media (prefers-color-scheme: dark) {
-  @import 'AppSideBanner.dark';
+  @include AppSideBanner.darkTheme;
 }
 </style>

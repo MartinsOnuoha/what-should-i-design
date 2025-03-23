@@ -1,0 +1,20 @@
+@mixin darkTheme {
+  .AppFilter {
+    input {
+      @apply bg-transparent text-[var(--color-ghostwhite)];
+    }
+    &__icon {
+      @apply text-[var(--color-ghostwhite)];
+    }
+
+    &__dropdown {
+      @apply bg-[var(--color-dark)] text-[var(--color-ghostwhite)];
+      li {
+        &:hover,
+        &.selected {
+          @apply text-gray-800;
+        }
+      }
+    }
+  }
+}
