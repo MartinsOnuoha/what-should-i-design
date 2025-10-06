@@ -39,7 +39,7 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.12.0",
+    "@rushstack/eslint-patch": "^1.13.0",
     "@tsconfig/node18": "^18.2.4",
     "@types/jest": "^30.0.0",
     "@types/jsdom": "^27.0.0",
